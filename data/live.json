@@ -1,17 +1,17 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-02T11:07+07:00",
+ "updated": "2026-11-02T14:05+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {
   "total": 500000,
-  "used": 73450,
-  "remaining": 426550
+  "used": 116950,
+  "remaining": 383050
  },
  "totals": {
-  "views": 581,
-  "likes": 68,
-  "comments": 5,
+  "views": 6670,
+  "likes": 73,
+  "comments": 6,
   "shares": 4,
   "saves": 1,
   "kols": 19,
@@ -53,16 +53,16 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 123,
-    "likes": 13,
+    "views": 2736,
+    "likes": 16,
     "comments": 0,
     "shares": 2,
     "saves": 0,
-    "updated": "2026-11-02T11:07+07:00",
+    "updated": "2026-11-02T14:05+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793764800&x-signature=UGUMWyhT5xMAxb1L6GEfWXvleEo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793775600&x-signature=XfbIG3RGPr9a%2BG%2Bs7l0uGg2EOmc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
    "video_url": "https://www.tiktok.com/@plwar_/video/7702757432715496722?_r=1&_t=ZS-9B0i6xvbLsO",
    "duration": 34,
    "uploaded": "2026-10-31T16:13+07:00"
@@ -156,16 +156,16 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 458,
-    "likes": 55,
-    "comments": 5,
+    "views": 3934,
+    "likes": 57,
+    "comments": 6,
     "shares": 2,
     "saves": 1,
-    "updated": "2026-11-02T11:07+07:00",
+    "updated": "2026-11-02T14:05+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793764800&x-signature=bdeEu7YnV%2Bq9qGzAX0%2B5uN8i5xI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793775600&x-signature=anhPZDiuHyh38kunBk0Pm27180M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
    "video_url": "https://www.tiktok.com/@eyekhunnn/video/7702757880789126421?_r=1&_t=ZS-9B2nyHnfNdU",
    "duration": 48,
    "uploaded": "2026-10-31T16:14+07:00"
@@ -175,7 +175,7 @@
    "handle": "kiddee_mesuk",
    "key": "kiddee_mesuk",
    "category": "พนักงานบริษัท",
-   "stage": "waiting",
+   "stage": "draft1",
    "note": "",
    "planned_post": "",
    "post_date_sheet": "",
@@ -288,12 +288,12 @@
    "planned_post": "",
    "post_date_sheet": "",
    "post_url": "",
-   "tiktok_handle": "Teachergracebaby",
-   "profile": "https://www.tiktok.com/@Teachergracebaby",
-   "confirmed": false,
-   "followers": 54800,
-   "budget": null,
-   "shipped": null,
+   "tiktok_handle": "teachergracebaby",
+   "profile": "https://www.tiktok.com/@teachergracebaby",
+   "confirmed": true,
+   "followers": 57300,
+   "budget": 8000,
+   "shipped": false,
    "stats": null
   },
   {
@@ -308,10 +308,10 @@
    "post_url": "",
    "tiktok_handle": "nannyz_z",
    "profile": "https://www.tiktok.com/@nannyz_z",
-   "confirmed": false,
-   "followers": 43100,
-   "budget": null,
-   "shipped": null,
+   "confirmed": true,
+   "followers": 43000,
+   "budget": 8000,
+   "shipped": false,
    "stats": null
   },
   {
@@ -324,12 +324,12 @@
    "planned_post": "",
    "post_date_sheet": "",
    "post_url": "",
-   "tiktok_handle": "Kandomaru",
-   "profile": "https://www.tiktok.com/@Kandomaru",
-   "confirmed": false,
-   "followers": null,
-   "budget": null,
-   "shipped": null,
+   "tiktok_handle": "kandomaru.channel",
+   "profile": "https://www.tiktok.com/@kandomaru.channel",
+   "confirmed": true,
+   "followers": 53600,
+   "budget": 8000,
+   "shipped": false,
    "stats": null
   },
   {
@@ -344,10 +344,10 @@
    "post_url": "",
    "tiktok_handle": "supper_jeng",
    "profile": "https://www.tiktok.com/@supper_jeng",
-   "confirmed": false,
+   "confirmed": true,
    "followers": 17600,
-   "budget": null,
-   "shipped": null,
+   "budget": 4500,
+   "shipped": false,
    "stats": null
   },
   {
@@ -362,10 +362,10 @@
    "post_url": "",
    "tiktok_handle": "jawkib",
    "profile": "https://www.tiktok.com/@jawkib",
-   "confirmed": false,
-   "followers": 42700,
-   "budget": null,
-   "shipped": null,
+   "confirmed": true,
+   "followers": 42600,
+   "budget": 5000,
+   "shipped": false,
    "stats": null
   },
   {
@@ -380,10 +380,10 @@
    "post_url": "",
    "tiktok_handle": "jimmynatapat",
    "profile": "https://www.tiktok.com/@jimmynatapat",
-   "confirmed": false,
+   "confirmed": true,
    "followers": 80100,
-   "budget": null,
-   "shipped": null,
+   "budget": 10000,
+   "shipped": false,
    "stats": null
   }
  ]
