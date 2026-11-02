@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magic Farm Vitamin 2026 · Phase 2 — KOL Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F7F5; --surface:#FFFFFF; --surface-2:#FAFCFB; --line:#E5EBE7; --line-2:#EEF2EF;
+  --ink:#0E1A15; --ink-2:#3F4D46; --muted:#84928B;
+  --brand:#0B7A53; --brand-2:#12A271; --brand-soft:#E6F5EE; --brand-ink:#075C3E;
+  --orange:#F2711C; --orange-soft:#FFF0E5;
+  --amber:#D99A06; --amber-soft:#FFF6DB;
+  --blue:#2F6FEB; --blue-soft:#E8F0FF;
+  --violet:#7C4DDB; --violet-soft:#F1EBFF;
+  --red:#E0473B; --red-soft:#FDECEA;
+  --gray:#8A9590; --gray-soft:#F0F3F1;
+  --r:20px; --r-sm:12px;
+  --sh:0 1px 2px rgba(14,26,21,.04), 0 10px 30px -14px rgba(14,26,21,.10);
+  --sh-lg:0 2px 4px rgba(14,26,21,.04), 0 24px 48px -20px rgba(14,26,21,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Inter','IBM Plex Sans Thai',system-ui,sans-serif;background:var(--bg);color:var(--ink);
+  font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 500px at 85% -120px,rgba(18,162,113,.10),transparent 60%),
+                   radial-gradient(900px 400px at -10% -100px,rgba(242,113,28,.06),transparent 60%);
+  background-repeat:no-repeat}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:'tnum'}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:28px 28px 56px}
+
+/* ── top bar ── */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}
+.mark{width:48px;height:48px;border-radius:14px;background:linear-gradient(145deg,#14A673,#0A6F4B);
+  display:grid;place-items:center;box-shadow:0 8px 20px -8px rgba(11,122,83,.55), inset 0 1px 0 rgba(255,255,255,.25)}
+.brand h1{font-size:20px;font-weight:700;letter-spacing:-.02em;line-height:1.2}
+.brand p{color:var(--muted);font-size:13px;margin-top:2px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:600}
+.pill.brand{background:var(--brand-soft);color:var(--brand-ink)}
+.top-r{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.live{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);
+  padding:8px 14px;border-radius:999px;font-size:13px;color:var(--ink-2);box-shadow:var(--sh)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--brand-2);position:relative}
+.dot::after{content:'';position:absolute;inset:-4px;border-radius:50%;background:var(--brand-2);opacity:.35;animation:ping 2s infinite}
+@keyframes ping{0%{transform:scale(.6);opacity:.45}100%{transform:scale(1.8);opacity:0}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;font-weight:600;font-size:13px;
+  background:var(--ink);color:#fff;transition:transform .15s, box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 18px -8px rgba(14,26,21,.5)}
+
+/* ── cards ── */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:22px}
+.card-h{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.card-h h2{font-size:15px;font-weight:700;letter-spacing:-.01em}
+.card-h .sub{color:var(--muted);font-size:12.5px}
+.grid{display:grid;gap:18px}
+.label{color:var(--muted);font-size:12.5px;font-weight:500}
+
+/* ── hero ── */
+.hero{grid-template-columns:1.25fr 1fr;margin-bottom:18px}
+.hero-main{position:relative;overflow:hidden;padding:28px 30px;display:flex;gap:28px;align-items:center;
+  background:linear-gradient(160deg,#FFFFFF 0%,#F3FBF7 100%)}
+.hero-main::before{content:'';position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle,rgba(18,162,113,.16),transparent 70%)}
+.hero-main .big{font-size:60px;font-weight:800;letter-spacing:-.045em;line-height:1;margin:10px 0 6px}
+.hero-main .meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}
+.hero-main .meta div{font-size:13px;color:var(--ink-2)}
+.hero-main .meta b{color:var(--ink);font-weight:700}
+.ring{flex:none;position:relative;width:168px;height:168px}
+.ring svg{transform:rotate(-90deg)}
+.ring .c{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.ring .c b{font-size:32px;font-weight:800;letter-spacing:-.03em;display:block;line-height:1}
+.ring .c span{font-size:12px;color:var(--muted);display:block;margin-top:4px}
+.stats{grid-template-columns:repeat(3,1fr);gap:14px}
+.stat{padding:18px 18px 16px;display:flex;flex-direction:column;gap:6px}
+.stat .ico{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;margin-bottom:4px}
+.stat .v{font-size:24px;font-weight:700;letter-spacing:-.03em;line-height:1.15}
+.stat .s{font-size:12px;color:var(--muted)}
+.muted-v{color:var(--muted)!important;font-weight:600!important;font-size:16px!important}
+
+/* ── pipeline ── */
+.row2{grid-template-columns:1fr 1fr;margin-bottom:18px}
+.pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.stage{border:1px solid var(--line-2);border-radius:var(--r-sm);padding:14px 12px;background:var(--surface-2);position:relative}
+.stage .n{font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.stage .t{font-size:12px;color:var(--ink-2);font-weight:600;margin-top:6px}
+.stage .bar{height:4px;border-radius:4px;margin-top:12px;background:var(--line-2);overflow:hidden}
+.stage .bar i{display:block;height:100%;border-radius:4px}
+.stack{display:flex;margin-top:12px;min-height:26px}
+.stack .av{width:26px;height:26px;font-size:10px;margin-left:-7px;border:2px solid #fff}
+.stack .av:first-child{margin-left:0}
+.stack .more{font-size:11px;color:var(--muted);align-self:center;margin-left:6px}
+.seg-bar{display:flex;height:10px;border-radius:10px;overflow:hidden;margin-top:18px;background:var(--line-2)}
+.seg-bar i{display:block;height:100%}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:12px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:8px;height:8px;border-radius:3px;display:inline-block}
+.alert{display:flex;align-items:center;gap:10px;margin-top:14px;padding:10px 12px;border-radius:var(--r-sm);
+  background:var(--red-soft);color:#A8302A;font-size:12.5px}
+
+/* ── trend ── */
+.trend{position:relative;height:230px}
+.trend svg{width:100%;height:100%;overflow:visible}
+.trend .tip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;font-size:12px;padding:6px 9px;border-radius:8px;
+  white-space:nowrap;transform:translate(-50%,-120%);opacity:0;transition:opacity .12s}
+.empty{height:100%;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:13px;
+  border:1px dashed var(--line);border-radius:var(--r-sm);background:var(--surface-2);padding:20px}
+.empty b{display:block;color:var(--ink-2);font-size:14px;margin-bottom:4px}
+
+/* ── top performers ── */
+.tops{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.tp{border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:var(--surface);transition:transform .18s, box-shadow .18s;display:block}
+.tp:hover{transform:translateY(-3px);box-shadow:var(--sh-lg)}
+.tp .cover{aspect-ratio:3/4;background:linear-gradient(160deg,#DFF3EA,#F6FBF8);position:relative;overflow:hidden}
+.tp .cover img{width:100%;height:100%;object-fit:cover;display:block}
+.tp .cover .ph{position:absolute;inset:0;display:grid;place-items:center}
+.tp .rank{position:absolute;top:10px;left:10px;background:rgba(14,26,21,.78);color:#fff;font-weight:700;font-size:12px;
+  padding:3px 9px;border-radius:999px;backdrop-filter:blur(6px)}
+.tp .rank.r1{background:linear-gradient(135deg,#F7B733,#F2711C)}
+.tp .views{position:absolute;bottom:10px;left:10px;right:10px;color:#fff;font-weight:800;font-size:20px;letter-spacing:-.02em;
+  text-shadow:0 2px 10px rgba(0,0,0,.45)}
+.tp .views small{display:block;font-size:11px;font-weight:600;opacity:.9;letter-spacing:0}
+.tp .body{padding:12px 12px 14px}
+.tp .h{font-weight:700;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tp .c{color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tp .kv{display:flex;justify-content:space-between;margin-top:10px;font-size:12px;color:var(--ink-2)}
+.tp .kv b{color:var(--ink)}
+.tp.ghost{border-style:dashed;background:var(--surface-2);display:grid;place-items:center;text-align:center;color:var(--muted);font-size:12.5px;padding:20px;min-height:200px}
+
+/* ── segments / watch ── */
+.row3{grid-template-columns:1fr 1fr;margin:18px 0}
+.segs{display:flex;flex-direction:column;gap:14px}
+.sg-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:7px}
+.sg-top b{font-weight:600;font-size:13.5px}
+.sg-top span{font-size:12px;color:var(--muted)}
+.track{height:10px;border-radius:10px;background:var(--line-2);overflow:hidden;display:flex}
+.track i{display:block;height:100%}
+.watch{display:flex;flex-direction:column;gap:2px;max-height:330px;overflow:auto;margin:0 -8px;padding:0 8px}
+.wi{display:flex;align-items:center;gap:12px;padding:10px 8px;border-radius:12px}
+.wi:hover{background:var(--surface-2)}
+.wi .tx{flex:1;min-width:0}
+.wi .tx b{font-weight:600;font-size:13.5px;display:block}
+.wi .tx span{font-size:12px;color:var(--muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wi .when{font-size:12px;font-weight:600;color:var(--ink-2);white-space:nowrap}
+
+/* ── avatar & chips ── */
+.av{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:13px;flex:none;color:#fff;
+  text-transform:uppercase;letter-spacing:-.02em}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.chip i{width:6px;height:6px;border-radius:50%;display:inline-block}
+
+/* ── table ── */
+.tbl-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.search{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:7px 12px;background:var(--surface-2);min-width:220px}
+.search input{border:0;outline:0;background:transparent;font:inherit;font-size:13px;width:100%;color:var(--ink)}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.fbtn{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font:inherit;font-size:12.5px;font-weight:600;
+  color:var(--ink-2);cursor:pointer;transition:all .15s}
+.fbtn:hover{border-color:#CBD5CF}
+.fbtn.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.fbtn .ct{opacity:.6;margin-left:4px}
+.tbl-wrap{overflow:auto;margin:0 -22px -22px;border-top:1px solid var(--line-2)}
+table{width:100%;border-collapse:separate;border-spacing:0;min-width:1080px}
+th{position:sticky;top:0;background:var(--surface-2);text-align:right;font-size:11.5px;font-weight:600;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.04em;padding:11px 14px;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;white-space:nowrap}
+th.l,td.l{text-align:left}
+th:hover{color:var(--ink-2)}
+th .arr{opacity:.35;margin-left:3px}
+th.sorted{color:var(--ink)} th.sorted .arr{opacity:1}
+td{padding:12px 14px;border-bottom:1px solid var(--line-2);text-align:right;white-space:nowrap;font-size:13px}
+tbody tr{transition:background .12s}
+tbody tr:hover{background:#F7FAF8}
+tbody tr:last-child td{border-bottom:0}
+.kol{display:flex;align-items:center;gap:11px}
+.kol b{font-weight:600;display:block}
+.kol span{color:var(--muted);font-size:12px;display:block;max-width:220px;overflow:hidden;text-overflow:ellipsis}
+.dim{color:#B6C0BB}
+.er-hi{color:var(--brand);font-weight:700}
+.link{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:999px;border:1px solid var(--line);font-size:12px;font-weight:600;color:var(--ink-2)}
+.link:hover{border-color:var(--ink);color:var(--ink)}
+tfoot td{background:var(--surface-2);font-weight:700;border-top:1px solid var(--line);border-bottom:0}
+
+.foot{margin-top:28px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.skeleton{color:transparent!important;background:linear-gradient(90deg,#EEF2EF 25%,#F6F8F7 50%,#EEF2EF 75%);background-size:200% 100%;
+  animation:sk 1.2s infinite;border-radius:8px}
+@keyframes sk{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+@media (max-width:1100px){
+  .hero,.row2,.row3{grid-template-columns:1fr}
+  .tops{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:680px){
+  .wrap{padding:18px 14px 40px}
+  .hero-main{flex-direction:column;align-items:flex-start;padding:22px}
+  .hero-main .big{font-size:46px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .pipe{grid-template-columns:repeat(2,1fr)}
+  .tops{grid-template-columns:repeat(2,1fr)}
+  .card{padding:18px}
+  .tbl-wrap{margin:0 -18px -18px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- top bar -->
+  <header class="top">
+    <div class="brand">
+      <div class="mark">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.8"/><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity=".75"/><circle cx="12" cy="12" r="2.2" fill="#fff"/></svg>
+      </div>
+      <div>
+        <h1 id="title">Magic Farm Vitamin 2026 <span class="pill brand" id="phase">Phase 2</span></h1>
+        <p id="subtitle">KOL Campaign Dashboard</p>
+      </div>
+    </div>
+    <div class="top-r">
+      <div class="live"><span class="dot"></span><span id="updated">กำลังโหลดข้อมูล…</span></div>
+      <a class="btn" id="sheetBtn" href="#" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+        Google Sheet
+      </a>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section class="grid hero">
+    <div class="card hero-main">
+      <div class="ring" id="ring"></div>
+      <div style="position:relative;flex:1;min-width:0">
+        <div class="label">ยอดวิวรวม (TikTok)</div>
+        <div class="big num" id="heroViews">—</div>
+        <div id="heroKpi" style="font-size:13.5px;color:var(--ink-2)"></div>
+        <div class="meta" id="heroMeta"></div>
+      </div>
+    </div>
+    <div class="grid stats" id="stats"></div>
+  </section>
+
+  <!-- pipeline + trend -->
+  <section class="grid row2">
+    <div class="card">
+      <div class="card-h"><div><h2>Content Pipeline</h2><div class="sub">สถานะงานแต่ละ KOL จากชีท Working Timeline</div></div><span class="pill brand" id="pipeTotal"></span></div>
+      <div class="pipe" id="pipe"></div>
+      <div class="seg-bar" id="segBar"></div>
+      <div class="legend" id="legend"></div>
+      <div id="issues"></div>
+    </div>
+    <div class="card">
+      <div class="card-h"><div><h2>Views Growth</h2><div class="sub">ยอดวิวสะสมทุกคลิปที่โพสต์แล้ว</div></div><span class="sub" id="trendDelta"></span></div>
+      <div class="trend" id="trend"></div>
+    </div>
+  </section>
+
+  <!-- top performers -->
+  <section class="card">
+    <div class="card-h"><div><h2>Top Performers</h2><div class="sub">เรียงตามยอดวิว · คลิกเพื่อเปิดคลิป</div></div></div>
+    <div class="tops" id="tops"></div>
+  </section>
+
+  <!-- segments + watch -->
+  <section class="grid row3">
+    <div class="card">
+      <div class="card-h"><div><h2>กลุ่มอาชีพ KOL</h2><div class="sub">จำนวน KOL · โพสต์แล้ว · ยอดวิวต่อกลุ่ม</div></div></div>
+      <div class="segs" id="segs"></div>
+    </div>
+    <div class="card">
+      <div class="card-h"><div><h2>Timeline & ต้องติดตาม</h2><div class="sub">กำหนดโพสต์ · งานที่ติดปัญหา · รอคอนเฟิร์ม</div></div></div>
+      <div class="watch" id="watch"></div>
+    </div>
+  </section>
+
+  <!-- table -->
+  <section class="card">
+    <div class="card-h" style="flex-wrap:wrap">
+      <div><h2>KOL ทั้งหมด</h2><div class="sub">คลิกหัวคอลัมน์เพื่อเรียง</div></div>
+      <div class="tbl-tools">
+        <div class="filters" id="filters"></div>
+        <label class="search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#84928B" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" placeholder="ค้นหา KOL / อาชีพ">
+        </label>
+      </div>
+    </div>
+    <div class="tbl-wrap"><table id="tbl"></table></div>
+  </section>
+
+  <footer class="foot">
+    <div>ข้อมูล KOL ซิงก์จาก Google Sheet · ยอด TikTok ดึงอัตโนมัติทุก 30 นาที · หน้านี้รีเฟรชเองทุก 5 นาที</div>
+    <div id="footRight"></div>
+  </footer>
+</div>
+
+<script>
+const S = { live:null, cfg:{}, hist:[], filter:'all', q:'', sort:{k:'views', d:-1} };
+
+const STAGES = {
+  waiting:{t:'รอเริ่มงาน', c:'var(--gray)',   bg:'var(--gray-soft)'},
+  issue:  {t:'ติดปัญหา',  c:'var(--red)',    bg:'var(--red-soft)'},
+  draft1: {t:'Draft 1',   c:'var(--amber)',  bg:'var(--amber-soft)'},
+  draft2: {t:'Draft 2',   c:'var(--blue)',   bg:'var(--blue-soft)'},
+  final:  {t:'Final',     c:'var(--violet)', bg:'var(--violet-soft)'},
+  posted: {t:'โพสต์แล้ว', c:'var(--brand-2)',bg:'var(--brand-soft)'},
+};
+const PIPE_ORDER = ['waiting','draft1','draft2','final','posted'];
+const SEGMENTS = [
+  {name:'โรงงาน & วิศวะ',  re:/โรงงาน|วิศว|ช่าง|engineer|factory/i, c:'#0B7A53'},
+  {name:'พนักงานออฟฟิศ',   re:/ออฟฟิ|office|บริษัท|พนง|เสมียน/i,     c:'#2F6FEB'},
+  {name:'ข้าราชการ & ครู', re:/ครู|ราชการ|ตำรวจ|teacher/i,            c:'#7C4DDB'},
+  {name:'อาชีพอิสระ',      re:/เกษตร|ไรเดอร์|rider|ค้าขาย|ฟรีแลนซ์|freelance/i, c:'#F2711C'},
+];
+const OTHER_SEG = {name:'อื่นๆ', c:'#8A9590'};
+const AV_COLORS = ['#0B7A53','#12A271','#2F6FEB','#7C4DDB','#F2711C','#D99A06','#E0473B','#0E8FA3','#5B6CF0','#C2410C'];
+
+/* ── utils ── */
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt = n => n == null ? '—' : Math.round(n).toLocaleString('en-US');
+const compact = n => {
+  if (n == null) return '—';
+  const a = Math.abs(n);
+  if (a >= 1e6) return (n/1e6).toFixed(a >= 1e7 ? 1 : 2).replace(/\.?0+$/,'') + 'M';
+  if (a >= 1e3) return (n/1e3).toFixed(a >= 1e5 ? 0 : 1).replace(/\.0$/,'') + 'K';
+  return String(Math.round(n));
+};
+const baht = n => n == null ? '—' : '฿' + Math.round(n).toLocaleString('en-US');
+const pct = (a, b, d=1) => b ? (a / b * 100).toFixed(d) + '%' : '—';
+const hash = s => [...String(s)].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+const avatar = (k, cls='') => {
+  const h = k.handle || '?';
+  const letters = h.replace(/[^a-z0-9]/gi,'').slice(0,2) || h.slice(0,2);
+  return `<span class="av ${cls}" style="background:${AV_COLORS[hash(h) % AV_COLORS.length]}" title="@${esc(h)}">${esc(letters)}</span>`;
+};
+const segOf = k => SEGMENTS.find(s => s.re.test(k.category || '')) || OTHER_SEG;
+const eng = s => s ? (s.likes + s.comments + s.shares + s.saves) : 0;
+const chip = st => { const m = STAGES[st] || STAGES.waiting; return `<span class="chip" style="background:${m.bg};color:${m.c}"><i style="background:${m.c}"></i>${m.t}</span>`; };
+const ago = iso => {
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  if (m < 1) return 'เมื่อสักครู่';
+  if (m < 60) return m + ' นาทีที่แล้ว';
+  const h = Math.floor(m / 60); if (h < 24) return h + ' ชม.ที่แล้ว';
+  return Math.floor(h / 24) + ' วันที่แล้ว';
+};
+const thTime = iso => new Date(iso).toLocaleString('th-TH', {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit', timeZone:'Asia/Bangkok'});
+const ico = (path, c, bg) => `<div class="ico" style="background:${bg};color:${c}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">${path}</svg></div>`;
+const I = {
+  heart:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/>',
+  spark:'<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>',
+  play:'<rect x="3" y="3" width="18" height="18" rx="4"/><path d="m10 8 6 4-6 4V8z"/>',
+  users:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/>',
+  wallet:'<path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/>',
+  target:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
+};
+
+/* ── data ── */
+async function getJSON(url, fallback) {
+  try { const r = await fetch(url + '?t=' + Date.now(), {cache:'no-store'}); if (!r.ok) throw 0; return await r.json(); }
+  catch { return fallback; }
+}
+async function load() {
+  const [live, cfg, hist] = await Promise.all([getJSON('data/live.json', null), getJSON('config.json', {}), getJSON('data/history.json', [])]);
+  if (live) S.live = live;
+  S.cfg = cfg || {}; S.hist = Array.isArray(hist) ? hist : [];
+  render();
+}
+
+function kpis() {
+  const L = S.live, C = S.cfg, ks = L?.kpi_from_sheet || {};
+  return {
+    views: C.kpi_views ?? ks.views ?? null,
+    eng: C.kpi_engagement ?? ks.engagement ?? null,
+    media: C.media_budget ?? ks.media_budget ?? null,
+  };
+}
+
+/* ── render ── */
+function render() {
+  const L = S.live; if (!L) { $('updated').textContent = 'ยังไม่มีข้อมูล — รอบอทอัปเดตรอบแรก'; return; }
+  const C = S.cfg, K = kpis();
+  const kols = L.kols || [];
+  const posted = kols.filter(k => k.stats);
+  const views = posted.reduce((a, k) => a + k.stats.views, 0);
+  const engT = posted.reduce((a, k) => a + eng(k.stats), 0);
+  const committed = kols.reduce((a, k) => a + (k.budget || 0), 0);
+  const followersAll = kols.reduce((a, k) => a + (k.followers || 0), 0);
+  const followersPosted = posted.reduce((a, k) => a + (k.followers || 0), 0);
+  const postedBudget = posted.reduce((a, k) => a + (k.budget || 0), 0);
+
+  // header
+  if (C.title) $('title').firstChild.textContent = C.title + ' ';
+  if (C.phase) $('phase').textContent = C.phase;
+  $('subtitle').textContent = [C.subtitle || 'KOL Campaign Dashboard', C.agency].filter(Boolean).join(' · ');
+  $('sheetBtn').href = C.sheet_url || L.source;
+  $('updated').innerHTML = `อัปเดต ${esc(thTime(L.updated))} น. <span style="color:var(--muted)">· ${esc(ago(L.updated))}</span>`;
+  $('footRight').textContent = `${kols.length} KOLs · ${posted.length} คลิปที่โพสต์แล้ว`;
+
+  // hero ring
+  const hasKpi = !!K.views;
+  const ratio = hasKpi ? views / K.views : (kols.length ? posted.length / kols.length : 0);
+  const R = 70, CIRC = 2 * Math.PI * R, shown = Math.min(ratio, 1);
+  const ringColor = hasKpi ? (ratio >= 1 ? '#12A271' : ratio >= .7 ? '#D99A06' : '#0B7A53') : '#12A271';
+  $('ring').innerHTML = `
+    <svg width="168" height="168" viewBox="0 0 168 168">
+      <defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#18B47E"/><stop offset="1" stop-color="${ringColor}"/></linearGradient></defs>
+      <circle cx="84" cy="84" r="${R}" fill="none" stroke="#E4EEE9" stroke-width="14"/>
+      <circle cx="84" cy="84" r="${R}" fill="none" stroke="url(#rg)" stroke-width="14" stroke-linecap="round"
+        stroke-dasharray="${CIRC}" stroke-dashoffset="${CIRC * (1 - shown)}" style="transition:stroke-dashoffset 1s ease"/>
+    </svg>
+    <div class="c"><div><b class="num">${hasKpi ? (ratio*100).toFixed(ratio < .1 ? 1 : 0) + '%' : posted.length + '/' + kols.length}</b>
+      <span>${hasKpi ? 'ของ KPI Views' : 'คลิปที่โพสต์แล้ว'}</span></div></div>`;
+  $('heroViews').textContent = fmt(views);
+  $('heroKpi').innerHTML = hasKpi
+    ? `เป้า <b>${fmt(K.views)}</b> views · เหลืออีก <b>${fmt(Math.max(K.views - views, 0))}</b>`
+    : `<span class="chip" style="background:var(--amber-soft);color:#A77400"><i style="background:var(--amber)"></i>KPI Views รอกำหนด</span>`;
+  $('heroMeta').innerHTML = `
+    <div>Avg / คลิป <b class="num">${posted.length ? compact(views / posted.length) : '—'}</b></div>
+    <div>ER <b class="num">${pct(engT, views, 2)}</b></div>
+    <div>Followers ที่โพสต์แล้ว <b class="num">${compact(followersPosted)}</b></div>`;
+
+  // stat cards
+  const stat = (icon, label, v, sub, muted) => `<div class="card stat">${icon}<div class="label">${label}</div><div class="v num ${muted ? 'muted-v' : ''}">${v}</div><div class="s">${sub}</div></div>`;
+  const s = posted.reduce((a, k) => { for (const m of ['likes','comments','shares','saves']) a[m] += k.stats[m]; return a; }, {likes:0, comments:0, shares:0, saves:0});
+  $('stats').innerHTML = [
+    stat(ico(I.spark,'var(--orange)','var(--orange-soft)'), 'Engagement', fmt(engT),
+         K.eng ? `${pct(engT, K.eng, 0)} ของเป้า ${compact(K.eng)}` : `Likes ${compact(s.likes)} · Comments ${compact(s.comments)} · Shares ${compact(s.shares)}`),
+    stat(ico(I.heart,'var(--red)','var(--red-soft)'), 'Engagement Rate', pct(engT, views, 2), `Saves ${fmt(s.saves)} ครั้ง`),
+    stat(ico(I.play,'var(--brand)','var(--brand-soft)'), 'คลิปที่โพสต์แล้ว', `${posted.length}<span style="color:var(--muted);font-weight:600;font-size:16px"> / ${kols.length}</span>`,
+         `เหลือ ${kols.length - posted.length} คลิป`),
+    stat(ico(I.users,'var(--blue)','var(--blue-soft)'), 'Total Followers', compact(followersAll), `${kols.filter(k => k.confirmed).length} KOL คอนเฟิร์มแล้ว`),
+    stat(ico(I.wallet,'var(--violet)','var(--violet-soft)'), K.media ? 'Budget ใช้ไป' : 'Budget KOL (คอนเฟิร์ม)', baht(committed),
+         K.media ? `${pct(committed, K.media, 1)} ของ Media ${baht(K.media)}` : 'Media budget รอกำหนด'),
+    stat(ico(I.target,'var(--amber)','var(--amber-soft)'), 'CPV', views && postedBudget ? '฿' + (postedBudget / views).toFixed(3) : '—',
+         views ? 'งบ KOL ที่โพสต์แล้ว ÷ views' : 'คำนวณเมื่อมียอดวิว', !views),
+  ].join('');
+
+  renderPipeline(kols);
+  renderTrend();
+  renderTops(posted);
+  renderSegments(kols);
+  renderWatch(kols);
+  renderFilters(kols);
+  renderTable();
+}
+
+function renderPipeline(kols) {
+  const by = st => kols.filter(k => k.stage === st);
+  const n = kols.length || 1;
+  $('pipeTotal').textContent = `${kols.length} KOLs`;
+  $('pipe').innerHTML = PIPE_ORDER.map(st => {
+    const list = by(st), m = STAGES[st];
+    const avs = list.slice(0, 5).map(k => avatar(k)).join('');
+    return `<div class="stage">
+      <div class="n num" style="color:${list.length ? m.c : 'var(--line)'}">${list.length}</div>
+      <div class="t">${m.t}</div>
+      <div class="bar"><i style="width:${list.length / n * 100}%;background:${m.c}"></i></div>
+      <div class="stack">${avs}${list.length > 5 ? `<span class="more">+${list.length - 5}</span>` : ''}</div>
+    </div>`;
+  }).join('');
+  const order = ['posted','final','draft2','draft1','issue','waiting'];
+  $('segBar').innerHTML = order.map(st => { const c = by(st).length; return c ? `<i style="width:${c / n * 100}%;background:${STAGES[st].c}" title="${STAGES[st].t}: ${c}"></i>` : ''; }).join('');
+  $('legend').innerHTML = order.map(st => `<span><i style="background:${STAGES[st].c}"></i>${STAGES[st].t} ${by(st).length}</span>`).join('');
+  const iss = by('issue');
+  $('issues').innerHTML = iss.length ? `<div class="alert"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+    <div><b>ติดปัญหา ${iss.length} คน:</b> ${iss.map(k => `@${esc(k.handle)} — ${esc(k.note)}`).join(' · ')}</div></div>` : '';
+}
+
+function renderTrend() {
+  const el = $('trend');
+  const pts = S.hist.filter(p => p && p.views != null).map(p => ({t: new Date(p.t), v: p.views}));
+  if (pts.length < 2) {
+    el.innerHTML = `<div class="empty"><div><b>กำลังเก็บข้อมูล</b>กราฟจะเริ่มแสดงหลังบอทอัปเดตครบ 2 รอบ (ทุก 30 นาที)</div></div>`;
+    $('trendDelta').textContent = '';
+    return;
+  }
+  const W = el.clientWidth || 560, H = 230, P = {l:46, r:12, t:14, b:28};
+  const t0 = pts[0].t.getTime(), t1 = pts[pts.length - 1].t.getTime() || t0 + 1;
+  const vmax = Math.max(...pts.map(p => p.v), 1) * 1.12;
+  const kv = kpis().views;
+  const yMax = kv && kv < vmax * 3 ? Math.max(vmax, kv * 1.05) : vmax;
+  const x = t => P.l + (t - t0) / Math.max(t1 - t0, 1) * (W - P.l - P.r);
+  const y = v => H - P.b - v / yMax * (H - P.t - P.b);
+  const line = pts.map((p, i) => `${i ? 'L' : 'M'}${x(p.t.getTime()).toFixed(1)},${y(p.v).toFixed(1)}`).join('');
+  const area = `${line}L${x(t1).toFixed(1)},${H - P.b}L${P.l},${H - P.b}Z`;
+  const ticks = [0, .25, .5, .75, 1].map(f => f * yMax);
+  const days = []; const d0 = new Date(t0); d0.setHours(0,0,0,0);
+  for (let d = d0.getTime() + 864e5; d < t1; d += 864e5) days.push(d);
+  const step = Math.ceil(days.length / 6) || 1;
+  const last = pts[pts.length - 1];
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+    <defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12A271" stop-opacity=".28"/><stop offset="1" stop-color="#12A271" stop-opacity="0"/></linearGradient></defs>
+    ${ticks.map(v => `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="#EEF2EF"/><text x="${P.l - 8}" y="${y(v) + 4}" text-anchor="end" font-size="11" fill="#84928B">${compact(v)}</text>`).join('')}
+    ${days.filter((_, i) => i % step === 0).map(d => `<text x="${x(d)}" y="${H - 8}" text-anchor="middle" font-size="11" fill="#84928B">${new Date(d).toLocaleDateString('th-TH',{day:'numeric',month:'short'})}</text>`).join('')}
+    ${kv && kv <= yMax ? `<line x1="${P.l}" x2="${W - P.r}" y1="${y(kv)}" y2="${y(kv)}" stroke="#F2711C" stroke-dasharray="5 5"/><text x="${W - P.r}" y="${y(kv) - 6}" text-anchor="end" font-size="11" font-weight="600" fill="#F2711C">KPI ${compact(kv)}</text>` : ''}
+    <path d="${area}" fill="url(#ag)"/>
+    <path d="${line}" fill="none" stroke="#0B7A53" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="${x(last.t.getTime())}" cy="${y(last.v)}" r="5" fill="#fff" stroke="#0B7A53" stroke-width="2.4"/>
+    <rect id="hov" x="${P.l}" y="${P.t}" width="${W - P.l - P.r}" height="${H - P.t - P.b}" fill="transparent"/>
+    <circle id="hovDot" r="4.5" fill="#0B7A53" opacity="0"/>
+  </svg><div class="tip" id="tip"></div>`;
+  const svg = el.querySelector('svg'), tip = $('tip'), dot = $('hovDot');
+  svg.addEventListener('mousemove', e => {
+    const r = svg.getBoundingClientRect(), mx = (e.clientX - r.left) / r.width * W;
+    let best = pts[0]; for (const p of pts) if (Math.abs(x(p.t.getTime()) - mx) < Math.abs(x(best.t.getTime()) - mx)) best = p;
+    const px = x(best.t.getTime()), py = y(best.v);
+    dot.setAttribute('cx', px); dot.setAttribute('cy', py); dot.setAttribute('opacity', 1);
+    tip.style.left = (px / W * r.width) + 'px'; tip.style.top = (py / H * r.height) + 'px'; tip.style.opacity = 1;
+    tip.innerHTML = `<b>${fmt(best.v)}</b> views · ${thTime(best.t)}`;
+  });
+  svg.addEventListener('mouseleave', () => { tip.style.opacity = 0; dot.setAttribute('opacity', 0); });
+  const dayAgo = pts.filter(p => p.t.getTime() <= t1 - 864e5).pop();
+  $('trendDelta').innerHTML = dayAgo ? `<b style="color:var(--brand)">+${compact(last.v - dayAgo.v)}</b> ใน 24 ชม.` : '';
+}
+
+function renderTops(posted) {
+  const top = [...posted].sort((a, b) => b.stats.views - a.stats.views).slice(0, 5);
+  const cards = top.map((k, i) => {
+    const e = eng(k.stats);
+    const href = k.video_url || k.post_url;
+    return `<a class="tp" href="${esc(href)}" target="_blank" rel="noopener">
+      <div class="cover">
+        <div class="ph">${avatar(k)}</div>
+        ${k.thumbnail ? `<img src="${esc(k.thumbnail)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}
+        <span class="rank ${i === 0 ? 'r1' : ''}">#${i + 1}</span>
+        <div class="views num">${compact(k.stats.views)}<small>views</small></div>
+      </div>
+      <div class="body">
+        <div class="h">@${esc(k.handle)}</div>
+        <div class="c">${esc(k.category || segOf(k).name)}</div>
+        <div class="kv"><span>ER <b>${pct(e, k.stats.views, 1)}</b></span><span>Likes <b>${compact(k.stats.likes)}</b></span><span>Saves <b>${compact(k.stats.saves)}</b></span></div>
+      </div></a>`;
+  });
+  const left = (S.live.kols || []).length - posted.length;
+  while (cards.length < 5) cards.push(`<div class="tp ghost"><div>${cards.length === 0 ? '<b style="color:var(--ink-2)">ยังไม่มีคลิปที่ดึงยอดได้</b><br>' : ''}รอคลิปถัดไป<br><span style="font-size:11.5px">อีก ${left} KOL ยังไม่โพสต์</span></div></div>`);
+  $('tops').innerHTML = cards.join('');
+}
+
+function renderSegments(kols) {
+  const groups = new Map();
+  for (const k of kols) {
+    const s = segOf(k);
+    if (!groups.has(s.name)) groups.set(s.name, {s, n:0, posted:0, views:0});
+    const g = groups.get(s.name); g.n++; if (k.stats) { g.posted++; g.views += k.stats.views; }
+  }
+  const arr = [...groups.values()].sort((a, b) => b.n - a.n);
+  const maxN = Math.max(...arr.map(g => g.n), 1);
+  const totalViews = arr.reduce((a, g) => a + g.views, 0);
+  $('segs').innerHTML = arr.map(g => `<div>
+      <div class="sg-top"><b><span style="display:inline-block;width:9px;height:9px;border-radius:3px;background:${g.s.c};margin-right:8px"></span>${esc(g.s.name)}</b>
+        <span><b style="color:var(--ink)">${g.n}</b> KOL · โพสต์ ${g.posted} · <b style="color:var(--ink)">${compact(g.views)}</b> views${totalViews ? ` (${pct(g.views, totalViews, 0)})` : ''}</span></div>
+      <div class="track" style="width:${g.n / maxN * 100}%"><i style="width:${g.posted / g.n * 100}%;background:${g.s.c}"></i><i style="flex:1;background:${g.s.c};opacity:.22"></i></div>
+    </div>`).join('') + `<div class="legend" style="margin-top:4px"><span><i style="background:var(--brand)"></i>โพสต์แล้ว</span><span><i style="background:var(--brand);opacity:.25"></i>ยังไม่โพสต์</span></div>`;
+}
+
+function renderWatch(kols) {
+  const items = [];
+  for (const k of kols) {
+    if (k.stage === 'issue') items.push({k, pri:0, when:'ด่วน', whenC:'var(--red)', text:k.note});
+    else if (!k.stats && k.planned_post) items.push({k, pri:1, when:k.planned_post, text:`กำหนดโพสต์ · ตอนนี้ ${STAGES[k.stage].t}`});
+    else if (k.stage === 'posted' && !k.stats) items.push({k, pri:1, when:'รอดึงยอด', text:'โพสต์แล้ว — บอทจะดึงยอดรอบถัดไป'});
+    else if (!k.confirmed && !k.stats) items.push({k, pri:2, when:'รอคอนเฟิร์ม', text:k.note || 'ยังไม่อยู่ในชีท Client chooses'});
+    else if (k.stage === 'waiting') items.push({k, pri:3, when:'รอเริ่มงาน', text:k.shipped ? 'ส่งสินค้าแล้ว · รอ Draft 1' : 'รอ Brief / Draft 1'});
+  }
+  items.sort((a, b) => a.pri - b.pri);
+  $('watch').innerHTML = items.length ? items.map(it => `<div class="wi">${avatar(it.k)}
+      <div class="tx"><b>@${esc(it.k.handle)} ${chip(it.k.stage)}</b><span>${esc(it.text)}</span></div>
+      <div class="when" style="${it.whenC ? `color:${it.whenC}` : ''}">${esc(it.when)}</div></div>`).join('')
+    : `<div class="empty" style="height:200px"><div><b>ทุกอย่างเรียบร้อย</b>ไม่มีงานค้าง</div></div>`;
+}
+
+const FILTERS = [
+  {id:'all', t:'ทั้งหมด', f:() => true},
+  {id:'posted', t:'โพสต์แล้ว', f:k => k.stage === 'posted'},
+  {id:'prod', t:'กำลังผลิต', f:k => ['draft1','draft2','final'].includes(k.stage)},
+  {id:'waiting', t:'รอเริ่มงาน', f:k => k.stage === 'waiting'},
+  {id:'issue', t:'ติดปัญหา', f:k => k.stage === 'issue'},
+];
+function renderFilters(kols) {
+  $('filters').innerHTML = FILTERS.map(f => {
+    const c = kols.filter(f.f).length;
+    if (f.id === 'issue' && !c) return '';
+    return `<button class="fbtn ${S.filter === f.id ? 'on' : ''}" data-f="${f.id}">${f.t}<span class="ct">${c}</span></button>`;
+  }).join('');
+  $('filters').querySelectorAll('button').forEach(b => b.onclick = () => { S.filter = b.dataset.f; renderFilters(kols); renderTable(); });
+}
+
+const COLS = [
+  {k:'no', t:'#', l:true, v:k => k.no ?? 999},
+  {k:'handle', t:'KOL', l:true, v:k => k.handle.toLowerCase()},
+  {k:'stage', t:'สถานะ', l:true, v:k => PIPE_ORDER.indexOf(k.stage)},
+  {k:'followers', t:'Followers', v:k => k.followers ?? -1},
+  {k:'views', t:'Views', v:k => k.stats?.views ?? -1},
+  {k:'likes', t:'Likes', v:k => k.stats?.likes ?? -1},
+  {k:'comments', t:'Comments', v:k => k.stats?.comments ?? -1},
+  {k:'shares', t:'Shares', v:k => k.stats?.shares ?? -1},
+  {k:'saves', t:'Saves', v:k => k.stats?.saves ?? -1},
+  {k:'er', t:'ER', v:k => k.stats?.views ? eng(k.stats) / k.stats.views : -1},
+  {k:'budget', t:'Budget', v:k => k.budget ?? -1},
+  {k:'cpv', t:'CPV', v:k => k.stats?.views && k.budget ? k.budget / k.stats.views : 1e9},
+  {k:'link', t:'คลิป', v:() => 0},
+];
+function renderTable() {
+  const kols = S.live.kols || [];
+  const f = FILTERS.find(x => x.id === S.filter) || FILTERS[0];
+  const q = S.q.trim().toLowerCase();
+  let rows = kols.filter(f.f).filter(k => !q || (k.handle + ' ' + k.category + ' ' + segOf(k).name).toLowerCase().includes(q));
+  const col = COLS.find(c => c.k === S.sort.k) || COLS[4];
+  rows.sort((a, b) => { const x = col.v(a), y = col.v(b); return (x > y ? 1 : x < y ? -1 : 0) * S.sort.d || (a.no ?? 0) - (b.no ?? 0); });
+  const ers = rows.filter(k => k.stats?.views).map(k => eng(k.stats) / k.stats.views);
+  const erAvg = ers.length ? ers.reduce((a, b) => a + b, 0) / ers.length : 0;
+  const d = v => v == null ? '<span class="dim">—</span>' : fmt(v);
+  const head = `<thead><tr>${COLS.map(c => `<th class="${c.l ? 'l' : ''} ${S.sort.k === c.k ? 'sorted' : ''}" data-k="${c.k}">${c.t}<span class="arr">${S.sort.k === c.k ? (S.sort.d < 0 ? '↓' : '↑') : '↕'}</span></th>`).join('')}</tr></thead>`;
+  const body = rows.map(k => {
+    const st = k.stats, er = st?.views ? eng(st) / st.views : null;
+    const sub = [esc(k.category), k.planned_post && !st ? `โพสต์ ${esc(k.planned_post)}` : '', k.shipped === true && !st ? 'ส่งของแล้ว' : ''].filter(Boolean).join(' · ');
+    return `<tr>
+      <td class="l num" style="color:var(--muted)">${k.no ?? ''}</td>
+      <td class="l"><div class="kol">${avatar(k)}<div><b>@${esc(k.handle)}</b><span>${sub}</span></div></div></td>
+      <td class="l">${chip(k.stage)}</td>
+      <td class="num">${k.followers ? compact(k.followers) : '<span class="dim">—</span>'}</td>
+      <td class="num" style="font-weight:700">${d(st?.views)}</td>
+      <td class="num">${d(st?.likes)}</td>
+      <td class="num">${d(st?.comments)}</td>
+      <td class="num">${d(st?.shares)}</td>
+      <td class="num">${d(st?.saves)}</td>
+      <td class="num ${er != null && er > erAvg && ers.length > 1 ? 'er-hi' : ''}">${er == null ? '<span class="dim">—</span>' : (er * 100).toFixed(2) + '%'}</td>
+      <td class="num">${k.budget ? baht(k.budget) : '<span class="dim">—</span>'}</td>
+      <td class="num">${st?.views && k.budget ? '฿' + (k.budget / st.views).toFixed(3) : '<span class="dim">—</span>'}</td>
+      <td>${k.post_url ? `<a class="link" href="${esc(k.video_url || k.post_url)}" target="_blank" rel="noopener">ดูคลิป ↗</a>` : '<span class="dim">—</span>'}</td>
+    </tr>`;
+  }).join('') || `<tr><td colspan="${COLS.length}" style="text-align:center;color:var(--muted);padding:30px">ไม่พบ KOL ที่ตรงกับตัวกรอง</td></tr>`;
+  const P = rows.filter(k => k.stats);
+  const sum = m => P.reduce((a, k) => a + k.stats[m], 0);
+  const tv = sum('views'), te = P.reduce((a, k) => a + eng(k.stats), 0), tb = rows.reduce((a, k) => a + (k.budget || 0), 0);
+  const foot = `<tfoot><tr><td></td><td class="l">รวม ${rows.length} KOL</td><td class="l" style="color:var(--muted);font-weight:500">โพสต์ ${P.length}</td>
+    <td class="num">${compact(rows.reduce((a, k) => a + (k.followers || 0), 0))}</td><td class="num">${fmt(tv)}</td><td class="num">${fmt(sum('likes'))}</td>
+    <td class="num">${fmt(sum('comments'))}</td><td class="num">${fmt(sum('shares'))}</td><td class="num">${fmt(sum('saves'))}</td>
+    <td class="num">${pct(te, tv, 2)}</td><td class="num">${baht(tb)}</td><td></td><td></td></tr></tfoot>`;
+  $('tbl').innerHTML = head + `<tbody>${body}</tbody>` + foot;
+  $('tbl').querySelectorAll('th').forEach(th => th.onclick = () => {
+    const k = th.dataset.k; if (k === 'link') return;
+    S.sort = S.sort.k === k ? {k, d:-S.sort.d} : {k, d:['handle','no','stage','cpv'].includes(k) ? 1 : -1};
+    renderTable();
+  });
+}
+
+$('q').addEventListener('input', e => { S.q = e.target.value; renderTable(); });
+let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(renderTrend, 150); });
+load();
+setInterval(load, 5 * 60 * 1000);
+</script>
+</body>
+</html>
