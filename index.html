@@ -116,12 +116,12 @@ a{color:inherit;text-decoration:none}
 .tp{border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:var(--surface);transition:transform .18s, box-shadow .18s;display:block}
 .tp:hover{transform:translateY(-3px);box-shadow:var(--sh-lg)}
 .tp .cover{aspect-ratio:3/4;background:linear-gradient(160deg,#DFF3EA,#F6FBF8);position:relative;overflow:hidden}
-.tp .cover img{width:100%;height:100%;object-fit:cover;display:block}
+.tp .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1}
 .tp .cover .ph{position:absolute;inset:0;display:grid;place-items:center}
-.tp .rank{position:absolute;top:10px;left:10px;background:rgba(14,26,21,.78);color:#fff;font-weight:700;font-size:12px;
+.tp .rank{position:absolute;z-index:2;top:10px;left:10px;background:rgba(14,26,21,.78);color:#fff;font-weight:700;font-size:12px;
   padding:3px 9px;border-radius:999px;backdrop-filter:blur(6px)}
 .tp .rank.r1{background:linear-gradient(135deg,#F7B733,#F2711C)}
-.tp .views{position:absolute;bottom:10px;left:10px;right:10px;color:#fff;font-weight:800;font-size:20px;letter-spacing:-.02em;
+.tp .views{position:absolute;z-index:2;bottom:10px;left:10px;right:10px;color:#fff;font-weight:800;font-size:20px;letter-spacing:-.02em;
   text-shadow:0 2px 10px rgba(0,0,0,.45)}
 .tp .views small{display:block;font-size:11px;font-weight:600;opacity:.9;letter-spacing:0}
 .tp .body{padding:12px 12px 14px}
@@ -144,7 +144,8 @@ a{color:inherit;text-decoration:none}
 .wi:hover{background:var(--surface-2)}
 .wi .tx{flex:1;min-width:0}
 .wi .tx b{font-weight:600;font-size:13.5px;display:block}
-.wi .tx span{font-size:12px;color:var(--muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wi .tx > span{font-size:12px;color:var(--muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wi .tx b .chip{margin-left:6px;vertical-align:1px}
 .wi .when{font-size:12px;font-weight:600;color:var(--ink-2);white-space:nowrap}
 
 /* ── avatar & chips ── */
@@ -164,20 +165,22 @@ a{color:inherit;text-decoration:none}
 .fbtn.on{background:var(--ink);border-color:var(--ink);color:#fff}
 .fbtn .ct{opacity:.6;margin-left:4px}
 .tbl-wrap{overflow:auto;margin:0 -22px -22px;border-top:1px solid var(--line-2)}
-table{width:100%;border-collapse:separate;border-spacing:0;min-width:1080px}
+table{width:100%;border-collapse:separate;border-spacing:0;min-width:1020px}
 th{position:sticky;top:0;background:var(--surface-2);text-align:right;font-size:11.5px;font-weight:600;color:var(--muted);
-  text-transform:uppercase;letter-spacing:.04em;padding:11px 14px;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;white-space:nowrap}
+  text-transform:uppercase;letter-spacing:.04em;padding:11px 10px;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;white-space:nowrap}
 th.l,td.l{text-align:left}
+th:first-child,td:first-child{padding-left:22px}
+th:last-child,td:last-child{padding-right:22px}
 th:hover{color:var(--ink-2)}
 th .arr{opacity:.35;margin-left:3px}
 th.sorted{color:var(--ink)} th.sorted .arr{opacity:1}
-td{padding:12px 14px;border-bottom:1px solid var(--line-2);text-align:right;white-space:nowrap;font-size:13px}
+td{padding:12px 10px;border-bottom:1px solid var(--line-2);text-align:right;white-space:nowrap;font-size:13px}
 tbody tr{transition:background .12s}
 tbody tr:hover{background:#F7FAF8}
 tbody tr:last-child td{border-bottom:0}
 .kol{display:flex;align-items:center;gap:11px}
 .kol b{font-weight:600;display:block}
-.kol span{color:var(--muted);font-size:12px;display:block;max-width:220px;overflow:hidden;text-overflow:ellipsis}
+.kol > div > span{color:var(--muted);font-size:12px;display:block;max-width:200px;overflow:hidden;text-overflow:ellipsis}
 .dim{color:#B6C0BB}
 .er-hi{color:var(--brand);font-weight:700}
 .link{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:999px;border:1px solid var(--line);font-size:12px;font-weight:600;color:var(--ink-2)}
@@ -432,8 +435,8 @@ function render() {
     stat(ico(I.play,'var(--brand)','var(--brand-soft)'), 'คลิปที่โพสต์แล้ว', `${posted.length}<span style="color:var(--muted);font-weight:600;font-size:16px"> / ${kols.length}</span>`,
          `เหลือ ${kols.length - posted.length} คลิป`),
     stat(ico(I.users,'var(--blue)','var(--blue-soft)'), 'Total Followers', compact(followersAll), `${kols.filter(k => k.confirmed).length} KOL คอนเฟิร์มแล้ว`),
-    stat(ico(I.wallet,'var(--violet)','var(--violet-soft)'), K.media ? 'Budget ใช้ไป' : 'Budget KOL (คอนเฟิร์ม)', baht(committed),
-         K.media ? `${pct(committed, K.media, 1)} ของ Media ${baht(K.media)}` : 'Media budget รอกำหนด'),
+    stat(ico(I.wallet,'var(--violet)','var(--violet-soft)'), K.media ? 'Budget ใช้ไป' : 'งบ KOL', baht(committed),
+         K.media ? `${pct(committed, K.media, 1)} ของ Media ${baht(K.media)}` : 'KOL คอนเฟิร์มแล้ว · Media รอกำหนด'),
     stat(ico(I.target,'var(--amber)','var(--amber-soft)'), 'CPV', views && postedBudget ? '฿' + (postedBudget / views).toFixed(3) : '—',
          views ? 'งบ KOL ที่โพสต์แล้ว ÷ views' : 'คำนวณเมื่อมียอดวิว', !views),
   ].join('');
@@ -463,7 +466,7 @@ function renderPipeline(kols) {
   }).join('');
   const order = ['posted','final','draft2','draft1','issue','waiting'];
   $('segBar').innerHTML = order.map(st => { const c = by(st).length; return c ? `<i style="width:${c / n * 100}%;background:${STAGES[st].c}" title="${STAGES[st].t}: ${c}"></i>` : ''; }).join('');
-  $('legend').innerHTML = order.map(st => `<span><i style="background:${STAGES[st].c}"></i>${STAGES[st].t} ${by(st).length}</span>`).join('');
+  $('legend').innerHTML = order.map(st => `<span><i style="background:${STAGES[st].c}"></i>${STAGES[st].t} <b style="color:var(--ink)">${by(st).length}</b></span>`).join('');
   const iss = by('issue');
   $('issues').innerHTML = iss.length ? `<div class="alert"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
     <div><b>ติดปัญหา ${iss.length} คน:</b> ${iss.map(k => `@${esc(k.handle)} — ${esc(k.note)}`).join(' · ')}</div></div>` : '';
