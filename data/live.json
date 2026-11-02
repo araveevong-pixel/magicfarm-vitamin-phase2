@@ -1,6 +1,6 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-02T18:07+07:00",
+ "updated": "2026-11-02T18:36+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {
@@ -9,8 +9,8 @@
   "remaining": 383050
  },
  "totals": {
-  "views": 13107,
-  "likes": 76,
+  "views": 13804,
+  "likes": 77,
   "comments": 6,
   "shares": 4,
   "saves": 3,
@@ -53,12 +53,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 6366,
-    "likes": 18,
+    "views": 6686,
+    "likes": 19,
     "comments": 0,
     "shares": 2,
     "saves": 2,
-    "updated": "2026-11-02T18:07+07:00",
+    "updated": "2026-11-02T18:36+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
@@ -156,12 +156,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 6741,
+    "views": 7118,
     "likes": 58,
     "comments": 6,
     "shares": 2,
     "saves": 1,
-    "updated": "2026-11-02T18:07+07:00",
+    "updated": "2026-11-02T18:36+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
