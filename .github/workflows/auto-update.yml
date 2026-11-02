@@ -2,7 +2,7 @@ name: Auto Update Dashboard
 
 on:
   schedule:
-    - cron: '*/30 * * * *'   # every 30 minutes
+    - cron: '7,37 * * * *'   # every 30 min, off-peak minutes
   workflow_dispatch:
   push:
     branches: [main]
