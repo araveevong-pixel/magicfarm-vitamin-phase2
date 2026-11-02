@@ -1,6 +1,6 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-02T10:56+07:00",
+ "updated": "2026-11-02T11:07+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {
@@ -9,13 +9,13 @@
   "remaining": 426550
  },
  "totals": {
-  "views": 0,
-  "likes": 0,
-  "comments": 0,
-  "shares": 0,
-  "saves": 0,
+  "views": 581,
+  "likes": 68,
+  "comments": 5,
+  "shares": 4,
+  "saves": 1,
   "kols": 19,
-  "posted": 0
+  "posted": 2
  },
  "kols": [
   {
@@ -52,7 +52,20 @@
    "followers": 5687,
    "budget": 2500,
    "shipped": true,
-   "stats": null
+   "stats": {
+    "views": 123,
+    "likes": 13,
+    "comments": 0,
+    "shares": 2,
+    "saves": 0,
+    "updated": "2026-11-02T11:07+07:00",
+    "method": "yt-dlp"
+   },
+   "author": "plwar_",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793764800&x-signature=UGUMWyhT5xMAxb1L6GEfWXvleEo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "video_url": "https://www.tiktok.com/@plwar_/video/7702757432715496722?_r=1&_t=ZS-9B0i6xvbLsO",
+   "duration": 34,
+   "uploaded": "2026-10-31T16:13+07:00"
   },
   {
    "no": 3,
@@ -142,7 +155,20 @@
    "followers": 6314,
    "budget": 2500,
    "shipped": true,
-   "stats": null
+   "stats": {
+    "views": 458,
+    "likes": 55,
+    "comments": 5,
+    "shares": 2,
+    "saves": 1,
+    "updated": "2026-11-02T11:07+07:00",
+    "method": "yt-dlp"
+   },
+   "author": "eyekhunnn",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793764800&x-signature=bdeEu7YnV%2Bq9qGzAX0%2B5uN8i5xI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "video_url": "https://www.tiktok.com/@eyekhunnn/video/7702757880789126421?_r=1&_t=ZS-9B2nyHnfNdU",
+   "duration": 48,
+   "uploaded": "2026-10-31T16:14+07:00"
   },
   {
    "no": 8,
@@ -265,7 +291,7 @@
    "tiktok_handle": "Teachergracebaby",
    "profile": "https://www.tiktok.com/@Teachergracebaby",
    "confirmed": false,
-   "followers": null,
+   "followers": 54800,
    "budget": null,
    "shipped": null,
    "stats": null
@@ -283,7 +309,7 @@
    "tiktok_handle": "nannyz_z",
    "profile": "https://www.tiktok.com/@nannyz_z",
    "confirmed": false,
-   "followers": null,
+   "followers": 43100,
    "budget": null,
    "shipped": null,
    "stats": null
@@ -319,7 +345,7 @@
    "tiktok_handle": "supper_jeng",
    "profile": "https://www.tiktok.com/@supper_jeng",
    "confirmed": false,
-   "followers": null,
+   "followers": 17600,
    "budget": null,
    "shipped": null,
    "stats": null
@@ -337,7 +363,7 @@
    "tiktok_handle": "jawkib",
    "profile": "https://www.tiktok.com/@jawkib",
    "confirmed": false,
-   "followers": null,
+   "followers": 42700,
    "budget": null,
    "shipped": null,
    "stats": null
@@ -355,7 +381,7 @@
    "tiktok_handle": "jimmynatapat",
    "profile": "https://www.tiktok.com/@jimmynatapat",
    "confirmed": false,
-   "followers": null,
+   "followers": 80100,
    "budget": null,
    "shipped": null,
    "stats": null
