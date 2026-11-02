@@ -2,7 +2,7 @@ name: Auto Update Dashboard
 
 on:
   schedule:
-    - cron: '7,37 * * * *'   # every 30 min, off-peak minutes
+    - cron: '7,37 * * * *'   # backup only, GitHub cron is often delayed or skipped
   workflow_dispatch:
   push:
     branches: [main]
@@ -12,7 +12,10 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
+# One run at a time. A newer queued run replaces an older queued one,
+# so the self-scheduling chain below can never multiply.
 concurrency:
   group: dashboard-sync
   cancel-in-progress: false
@@ -34,7 +37,7 @@ jobs:
       - name: Sync sheet + scrape TikTok
         run: python3 scripts/sync.py
 
-      # Commits ONLY the data files — index.html / config.json are never touched by the bot.
+      # Commits ONLY the data files. index.html / config.json are never touched by the bot.
       - name: Commit data
         run: |
           git config user.name "dashboard-bot"
@@ -49,3 +52,22 @@ jobs:
             sleep 5
           done
           exit 1
+
+  # Self-scheduling: wait ~27 min on the "refresh-timer" environment (no runner is used
+  # while waiting), then start the next run. Keeps the dashboard fresh every ~30 min
+  # without depending on GitHub's cron.
+  next:
+    needs: sync
+    if: always()
+    runs-on: ubuntu-latest
+    environment: refresh-timer
+    steps:
+      - name: Queue next refresh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Safety net: if the environment timer is ever removed, still wait ~25 min.
+          created=$(gh run view "$GITHUB_RUN_ID" --repo "$GITHUB_REPOSITORY" --json createdAt -q .createdAt)
+          elapsed=$(( $(date +%s) - $(date -d "$created" +%s) ))
+          if [ "$elapsed" -lt 1500 ]; then sleep $(( 1500 - elapsed )); fi
+          gh workflow run auto-update.yml --repo "$GITHUB_REPOSITORY" --ref main
