@@ -1,6 +1,6 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-04T04:14+07:00",
+ "updated": "2026-11-04T04:42+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {
@@ -9,8 +9,8 @@
   "remaining": 383050
  },
  "totals": {
-  "views": 66663,
-  "likes": 295,
+  "views": 66779,
+  "likes": 308,
   "comments": 17,
   "shares": 30,
   "saves": 12,
@@ -35,16 +35,16 @@
    "budget": 8000,
    "shipped": true,
    "stats": {
-    "views": 3902,
-    "likes": 74,
+    "views": 3918,
+    "likes": 87,
     "comments": 11,
     "shares": 17,
     "saves": 7,
-    "updated": "2026-11-04T04:14+07:00",
+    "updated": "2026-11-04T04:42+07:00",
     "method": "yt-dlp"
    },
    "author": "greygreenish",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEaIJNoEkVI8A3BALAibX8itshBYMk9cYPZBu~tplv-tiktokx-origin.image?dr=9636&x-expires=1793912400&x-signature=juN98YviH02UysD22SQhjqvKKeQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEaIJNoEkVI8A3BALAibX8itshBYMk9cYPZBu~tplv-tiktokx-origin.image?dr=9636&x-expires=1793912400&x-signature=Ra5w%2BKtBnYJ3cy4aAjpfv0TdUtQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
    "video_url": "https://www.tiktok.com/@greygreenish/video/7703528390891932949?_r=1&_t=ZS-9B67LrRfBI5",
    "duration": 37,
    "uploaded": "2026-11-02T18:04+07:00"
@@ -66,12 +66,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 29400,
+    "views": 29500,
     "likes": 27,
     "comments": 0,
     "shares": 2,
     "saves": 2,
-    "updated": "2026-11-04T04:14+07:00",
+    "updated": "2026-11-04T04:42+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
@@ -174,11 +174,11 @@
     "comments": 6,
     "shares": 3,
     "saves": 3,
-    "updated": "2026-11-04T04:14+07:00",
+    "updated": "2026-11-04T04:42+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793912400&x-signature=KrOZJj9pGrXSSjqCuDbD2x982Yo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793912400&x-signature=y42S7haP5VhHFtY2hy871L0B8KE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
    "video_url": "https://www.tiktok.com/@eyekhunnn/video/7702757880789126421?_r=1&_t=ZS-9B2nyHnfNdU",
    "duration": 48,
    "uploaded": "2026-10-31T16:14+07:00"
@@ -277,11 +277,11 @@
     "comments": 0,
     "shares": 8,
     "saves": 0,
-    "updated": "2026-11-04T04:14+07:00",
+    "updated": "2026-11-04T04:42+07:00",
     "method": "yt-dlp"
    },
    "author": "a.aunaunnn",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o8fI9dKegshRwloFoQFGeGoGwfALFUOAjbMrgg~tplv-tiktokx-origin.image?dr=9636&x-expires=1793912400&x-signature=ZJmHg6rvLtbUUD2%2BePl5X5xr9mM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o8fI9dKegshRwloFoQFGeGoGwfALFUOAjbMrgg~tplv-tiktokx-origin.image?dr=9636&x-expires=1793912400&x-signature=tsWp2fXD7MPTkn43xWwXwiqLKfE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
    "video_url": "https://www.tiktok.com/@a.aunaunnn/video/7703472961180667144?_r=1&_t=ZS-9B67MSDsIPV",
    "duration": 33,
    "uploaded": "2026-11-02T14:29+07:00"
