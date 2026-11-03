@@ -1,6 +1,6 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-03T13:01+07:00",
+ "updated": "2026-11-03T13:28+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {
@@ -9,8 +9,8 @@
   "remaining": 383050
  },
  "totals": {
-  "views": 38500,
-  "likes": 116,
+  "views": 39000,
+  "likes": 119,
   "comments": 6,
   "shares": 4,
   "saves": 4,
@@ -53,12 +53,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 19100,
+    "views": 19500,
     "likes": 23,
     "comments": 0,
     "shares": 2,
     "saves": 2,
-    "updated": "2026-11-03T13:01+07:00",
+    "updated": "2026-11-03T13:28+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
@@ -156,16 +156,16 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 19400,
-    "likes": 93,
+    "views": 19500,
+    "likes": 96,
     "comments": 6,
     "shares": 2,
     "saves": 2,
-    "updated": "2026-11-03T13:01+07:00",
+    "updated": "2026-11-03T13:28+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793858400&x-signature=%2FUX%2BIyn4Allx8Ex1fT8Olszzwzg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793858400&x-signature=3uZfYWUCwyPOV4lQyYnQVMpHjEI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
    "video_url": "https://www.tiktok.com/@eyekhunnn/video/7702757880789126421?_r=1&_t=ZS-9B2nyHnfNdU",
    "duration": 48,
    "uploaded": "2026-10-31T16:14+07:00"
