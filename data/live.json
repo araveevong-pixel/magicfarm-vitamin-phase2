@@ -1,6 +1,6 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-03T10:15+07:00",
+ "updated": "2026-11-03T10:43+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {
@@ -9,7 +9,7 @@
   "remaining": 383050
  },
  "totals": {
-  "views": 34400,
+  "views": 34800,
   "likes": 108,
   "comments": 6,
   "shares": 4,
@@ -53,16 +53,16 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 17000,
+    "views": 17200,
     "likes": 22,
     "comments": 0,
     "shares": 2,
     "saves": 2,
-    "updated": "2026-11-03T10:15+07:00",
+    "updated": "2026-11-03T10:43+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793847600&x-signature=85lOhPiB5C9fxT9h%2F6IR93ubZKQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793847600&x-signature=lnsem8y%2BRN9AQk28zkSWAcQtxB8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@plwar_/video/7702757432715496722?_r=1&_t=ZS-9B0i6xvbLsO",
    "duration": 34,
    "uploaded": "2026-10-31T16:13+07:00"
@@ -156,16 +156,16 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 17400,
+    "views": 17600,
     "likes": 86,
     "comments": 6,
     "shares": 2,
     "saves": 1,
-    "updated": "2026-11-03T10:15+07:00",
+    "updated": "2026-11-03T10:43+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793847600&x-signature=gkt9hEkjyKARKK0Lb2sbymKphDk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793847600&x-signature=gkt9hEkjyKARKK0Lb2sbymKphDk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@eyekhunnn/video/7702757880789126421?_r=1&_t=ZS-9B2nyHnfNdU",
    "duration": 48,
    "uploaded": "2026-10-31T16:14+07:00"
@@ -193,7 +193,7 @@
    "handle": "fongfirst",
    "key": "fongfirst",
    "category": "โรงงาน",
-   "stage": "draft1",
+   "stage": "draft2",
    "note": "",
    "planned_post": "",
    "post_date_sheet": "",
@@ -284,7 +284,7 @@
    "key": "teachergracebaby",
    "category": "ครู",
    "stage": "waiting",
-   "note": "รออัปเดทจาก KOLs",
+   "note": "",
    "planned_post": "",
    "post_date_sheet": "",
    "post_url": "",
@@ -302,7 +302,7 @@
    "key": "nannyz_z",
    "category": "รับราชการตำรวจ",
    "stage": "waiting",
-   "note": "รออัปเดทจาก KOLs",
+   "note": "",
    "planned_post": "",
    "post_date_sheet": "",
    "post_url": "",
@@ -375,7 +375,7 @@
    "category": "ไรเดอร์",
    "stage": "waiting",
    "note": "",
-   "planned_post": "",
+   "planned_post": "11-12 Nov",
    "post_date_sheet": "",
    "post_url": "",
    "tiktok_handle": "jimmynatapat",
