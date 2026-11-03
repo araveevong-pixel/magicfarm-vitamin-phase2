@@ -1,6 +1,6 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-03T20:21+07:00",
+ "updated": "2026-11-03T20:49+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {
@@ -9,13 +9,13 @@
   "remaining": 383050
  },
  "totals": {
-  "views": 50700,
-  "likes": 135,
-  "comments": 6,
-  "shares": 4,
-  "saves": 5,
+  "views": 55211,
+  "likes": 263,
+  "comments": 17,
+  "shares": 29,
+  "saves": 12,
   "kols": 19,
-  "posted": 2
+  "posted": 4
  },
  "kols": [
   {
@@ -23,18 +23,31 @@
    "handle": "greygreenish",
    "key": "greygreenish",
    "category": "วิศวะโยธา",
-   "stage": "draft2",
+   "stage": "posted",
    "note": "",
    "planned_post": "6-13 Nov",
    "post_date_sheet": "",
-   "post_url": "",
+   "post_url": "https://vt.tiktok.com/ZSpdHcJ36/",
    "tiktok_handle": "greygreenish",
    "profile": "https://www.tiktok.com/@greygreenish",
    "confirmed": true,
    "followers": 67500,
    "budget": 8000,
    "shipped": true,
-   "stats": null
+   "stats": {
+    "views": 3271,
+    "likes": 61,
+    "comments": 11,
+    "shares": 17,
+    "saves": 7,
+    "updated": "2026-11-03T20:49+07:00",
+    "method": "yt-dlp"
+   },
+   "author": "greygreenish",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEaIJNoEkVI8A3BALAibX8itshBYMk9cYPZBu~tplv-tiktokx-origin.image?dr=9636&x-expires=1793883600&x-signature=D5zxvzJHfSImFOoYyrMoByS7nW8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "video_url": "https://www.tiktok.com/@greygreenish/video/7703528390891932949?_r=1&_t=ZS-9B67LrRfBI5",
+   "duration": 37,
+   "uploaded": "2026-11-02T18:04+07:00"
   },
   {
    "no": 2,
@@ -53,16 +66,16 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 25500,
+    "views": 25900,
     "likes": 25,
     "comments": 0,
     "shares": 2,
     "saves": 2,
-    "updated": "2026-11-03T20:21+07:00",
+    "updated": "2026-11-03T20:49+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793883600&x-signature=8JH6LcV9xRZFK1yfwLJSz7Dg%2F3c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793883600&x-signature=3MSx0402JkLRUFuT4EbhxoIZzyY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@plwar_/video/7702757432715496722?_r=1&_t=ZS-9B0i6xvbLsO",
    "duration": 34,
    "uploaded": "2026-10-31T16:13+07:00"
@@ -73,7 +86,7 @@
    "key": "faiionicha_",
    "category": "เกษตรกร",
    "stage": "issue",
-   "note": "สินค้ายังไม่ถึงเนื่องจากติดน้ำท่วมภาคใต้",
+   "note": "สินค้าค้างที่คลัง กำลังจัดเตรียมส่งให้ใหม่ค่ะ",
    "planned_post": "",
    "post_date_sheet": "",
    "post_url": "",
@@ -156,12 +169,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 25200,
-    "likes": 110,
+    "views": 25500,
+    "likes": 111,
     "comments": 6,
     "shares": 2,
     "saves": 3,
-    "updated": "2026-11-03T20:21+07:00",
+    "updated": "2026-11-03T20:49+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
@@ -247,18 +260,31 @@
    "handle": "a.aunaunnn",
    "key": "a.aunaunnn",
    "category": "วิศวะ",
-   "stage": "draft2",
+   "stage": "posted",
    "note": "",
    "planned_post": "6-13 Nov",
    "post_date_sheet": "",
-   "post_url": "",
+   "post_url": "https://vt.tiktok.com/ZSpdHcU91/",
    "tiktok_handle": "a.aunaunnn",
    "profile": "https://www.tiktok.com/@a.aunaunnn",
    "confirmed": true,
    "followers": 132200,
    "budget": 8000,
    "shipped": true,
-   "stats": null
+   "stats": {
+    "views": 540,
+    "likes": 66,
+    "comments": 0,
+    "shares": 8,
+    "saves": 0,
+    "updated": "2026-11-03T20:49+07:00",
+    "method": "yt-dlp"
+   },
+   "author": "a.aunaunnn",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o8fI9dKegshRwloFoQFGeGoGwfALFUOAjbMrgg~tplv-tiktokx-origin.image?dr=9636&x-expires=1793883600&x-signature=QzNw7vNd07QqyfG45nfz4PL9dc8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "video_url": "https://www.tiktok.com/@a.aunaunnn/video/7703472961180667144?_r=1&_t=ZS-9B67MSDsIPV",
+   "duration": 33,
+   "uploaded": "2026-11-02T14:29+07:00"
   },
   {
    "no": 13,
