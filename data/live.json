@@ -1,6 +1,6 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-03T17:36+07:00",
+ "updated": "2026-11-03T18:04+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {
@@ -9,8 +9,8 @@
   "remaining": 383050
  },
  "totals": {
-  "views": 46700,
-  "likes": 131,
+  "views": 47200,
+  "likes": 132,
   "comments": 6,
   "shares": 4,
   "saves": 5,
@@ -53,16 +53,16 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 23500,
+    "views": 23900,
     "likes": 24,
     "comments": 0,
     "shares": 2,
     "saves": 2,
-    "updated": "2026-11-03T17:36+07:00",
+    "updated": "2026-11-03T18:04+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793872800&x-signature=HTLOP52ijTfv6VWEJ03aCUZfH74%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793876400&x-signature=ewgxbtXl4tMAR6prhs2A3MnMhac%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
    "video_url": "https://www.tiktok.com/@plwar_/video/7702757432715496722?_r=1&_t=ZS-9B0i6xvbLsO",
    "duration": 34,
    "uploaded": "2026-10-31T16:13+07:00"
@@ -156,16 +156,16 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 23200,
-    "likes": 107,
+    "views": 23300,
+    "likes": 108,
     "comments": 6,
     "shares": 2,
     "saves": 3,
-    "updated": "2026-11-03T17:36+07:00",
+    "updated": "2026-11-03T18:04+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793872800&x-signature=hxhReTpJuZnwZyU40cDtbcPD3Io%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o4WqVIBzVAs1BRaggIFk5scDAffHCYbEBEBXlI~tplv-tiktokx-origin.image?dr=9636&x-expires=1793876400&x-signature=M2R2W3WL8CpVXns%2BRyecgJwhY38%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
    "video_url": "https://www.tiktok.com/@eyekhunnn/video/7702757880789126421?_r=1&_t=ZS-9B2nyHnfNdU",
    "duration": 48,
    "uploaded": "2026-10-31T16:14+07:00"
