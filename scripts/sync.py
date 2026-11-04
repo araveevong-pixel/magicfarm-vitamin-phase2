@@ -162,16 +162,25 @@ def parse_working(text):
         timeline = g(r, i_tl)
         d1, d2, fd = g(r, i_d1), g(r, i_d2), g(r, i_fd)
         link = g(r, i_link)
+        if not re.search(r"https?://|tiktok\.com", link):
+            link = ""          # ignore stray text / spaces in the Link Post cell
         note = ""
+
+        def is_draft(s):
+            return bool(re.search(r"draft", s, re.I))
 
         if link:
             stage = "posted"
-        elif fd:
+        elif fd and is_draft(fd):
             stage = "final"
-        elif d2:
+        elif d2 and is_draft(d2):
             stage = "draft2"
-        elif d1 and re.search(r"draft", d1, re.I):
+            if fd:
+                note = f"Final: {fd}"[:120]
+        elif d1 and is_draft(d1):
             stage = "draft1"
+            if d2:              # e.g. a due date typed into the 2nd Draft cell
+                note = f"Draft 2: {d2}"[:120]
         elif d1:
             stage = "issue"
             note = d1[:120]
