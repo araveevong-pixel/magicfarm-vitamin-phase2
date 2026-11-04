@@ -382,10 +382,18 @@ def main():
             log(f"   KPI tab not readable: {e}")
     log(f"Roster: {len(working)} KOLs in '{WORKING_SHEET}', {len(client)} in 'Client chooses', KPI tab: {kpi or '—'}")
 
+    # Fallback post links from config.json ("post_links": {"handle": "url"}) for clips that
+    # are live on TikTok but not yet pasted into the sheet. The sheet always wins when filled.
+    cfg = load_json(os.path.join(ROOT, "config.json"), {})
+    extra_links = {norm(h): clean_url(u) for h, u in (cfg.get("post_links") or {}).items() if u}
+
     # 2) Merge + scrape
     now = datetime.now(TZ_BKK)
     kols = []
     for w in working:
+        if not w["post_url"] and w["key"] in extra_links:
+            w["post_url"], w["stage"], w["note"] = extra_links[w["key"]], "posted", ""
+            log(f"   {w['handle']}: using post link from config.json (not in sheet yet)")
         c = client.get(w["key"], {})
         p = prev_by_key.get(w["key"], {})
         profile = c.get("profile") or p.get("profile") or f"https://www.tiktok.com/@{w['handle']}"
