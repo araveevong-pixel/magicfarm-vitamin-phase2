@@ -17,7 +17,7 @@ permissions:
 # One run at a time. A newer queued run replaces an older queued one,
 # so the self-scheduling chain below can never multiply.
 concurrency:
-  group: dashboard-sync
+  group: dashboard-sync-v2
   cancel-in-progress: false
 
 jobs:
