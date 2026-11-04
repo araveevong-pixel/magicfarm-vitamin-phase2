@@ -1,17 +1,17 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-04T20:28+07:00",
+ "updated": "2026-11-04T20:53+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {},
  "totals": {
-  "views": 92207,
-  "likes": 359,
-  "comments": 15,
-  "shares": 18,
-  "saves": 11,
+  "views": 98547,
+  "likes": 462,
+  "comments": 26,
+  "shares": 35,
+  "saves": 18,
   "kols": 22,
-  "posted": 5
+  "posted": 6
  },
  "kols": [
   {
@@ -19,18 +19,31 @@
    "handle": "greygreenish",
    "key": "greygreenish",
    "category": "วิศวะโยธา",
-   "stage": "draft2",
+   "stage": "posted",
    "note": "",
    "planned_post": "6-13 Nov",
    "post_date_sheet": "",
-   "post_url": "",
+   "post_url": "https://www.tiktok.com/@greygreenish/video/7703528390891932949",
    "tiktok_handle": "greygreenish",
    "profile": "https://www.tiktok.com/@greygreenish",
    "confirmed": true,
    "followers": 67500,
    "budget": 8000,
    "shipped": true,
-   "stats": null
+   "stats": {
+    "views": 4777,
+    "likes": 94,
+    "comments": 11,
+    "shares": 17,
+    "saves": 7,
+    "updated": "2026-11-04T20:53+07:00",
+    "method": "yt-dlp"
+   },
+   "author": "greygreenish",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEaIJNoEkVI8A3BALAibX8itshBYMk9cYPZBu~tplv-tiktokx-origin.image?dr=9636&x-expires=1793970000&x-signature=xXHKJ31mBgDCvRwcWfPdT8F8bKU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "video_url": "https://www.tiktok.com/@greygreenish/video/7703528390891932949",
+   "duration": 37,
+   "uploaded": "2026-11-02T18:04+07:00"
   },
   {
    "no": 2,
@@ -49,12 +62,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 39200,
+    "views": 39600,
     "likes": 33,
     "comments": 0,
     "shares": 2,
     "saves": 4,
-    "updated": "2026-11-04T20:28+07:00",
+    "updated": "2026-11-04T20:53+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
@@ -122,7 +135,7 @@
    "handle": "barrygift289",
    "key": "barrygift289",
    "category": "โรงงาน",
-   "stage": "draft1",
+   "stage": "draft2",
    "note": "",
    "planned_post": "",
    "post_date_sheet": "",
@@ -152,12 +165,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 42400,
+    "views": 42900,
     "likes": 151,
     "comments": 6,
     "shares": 4,
     "saves": 4,
-    "updated": "2026-11-04T20:28+07:00",
+    "updated": "2026-11-04T20:53+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
@@ -201,12 +214,12 @@
    "budget": 4200,
    "shipped": true,
    "stats": {
-    "views": 435,
-    "likes": 69,
+    "views": 496,
+    "likes": 76,
     "comments": 9,
     "shares": 4,
     "saves": 3,
-    "updated": "2026-11-04T20:28+07:00",
+    "updated": "2026-11-04T20:53+07:00",
     "method": "yt-dlp"
    },
    "author": "fongfirst_",
@@ -232,12 +245,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 72,
+    "views": 74,
     "likes": 16,
     "comments": 0,
     "shares": 0,
     "saves": 0,
-    "updated": "2026-11-04T20:28+07:00",
+    "updated": "2026-11-04T20:53+07:00",
     "method": "yt-dlp"
    },
    "author": "parii_c91",
@@ -281,16 +294,16 @@
    "budget": 8000,
    "shipped": true,
    "stats": {
-    "views": 10100,
-    "likes": 90,
+    "views": 10700,
+    "likes": 92,
     "comments": 0,
     "shares": 8,
     "saves": 0,
-    "updated": "2026-11-04T20:28+07:00",
+    "updated": "2026-11-04T20:53+07:00",
     "method": "yt-dlp"
    },
    "author": "a.aunaunnn",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o8fI9dKegshRwloFoQFGeGoGwfALFUOAjbMrgg~tplv-tiktokx-origin.image?dr=9636&x-expires=1793970000&x-signature=s3VVnUr9dfslrs7T4LgMSmtiojo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o8fI9dKegshRwloFoQFGeGoGwfALFUOAjbMrgg~tplv-tiktokx-origin.image?dr=9636&x-expires=1793970000&x-signature=KmpupE8%2Bbnl5jQxONISxjnLPiww%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@a.aunaunnn/video/7703472961180667144?_r=1&_t=ZS-9B67MSDsIPV",
    "duration": 33,
    "uploaded": "2026-11-02T14:29+07:00"
