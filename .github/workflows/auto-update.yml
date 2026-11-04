@@ -70,4 +70,9 @@ jobs:
           created=$(gh run view "$GITHUB_RUN_ID" --repo "$GITHUB_REPOSITORY" --json createdAt -q .createdAt)
           elapsed=$(( $(date +%s) - $(date -d "$created" +%s) ))
           if [ "$elapsed" -lt 1500 ]; then sleep $(( 1500 - elapsed )); fi
-          gh workflow run auto-update.yml --repo "$GITHUB_REPOSITORY" --ref main
+          # Retry: GitHub's API occasionally returns a 5xx; one glitch must not stop the chain.
+          for i in 1 2 3 4 5 6; do
+            gh workflow run auto-update.yml --repo "$GITHUB_REPOSITORY" --ref main && exit 0
+            echo "dispatch failed (attempt $i), retrying in $((i * 20))s"; sleep $((i * 20))
+          done
+          exit 1
