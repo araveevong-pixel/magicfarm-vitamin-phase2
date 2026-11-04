@@ -1,12 +1,12 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-04T13:28+07:00",
+ "updated": "2026-11-04T13:56+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {},
  "totals": {
-  "views": 71873,
-  "likes": 234,
+  "views": 72574,
+  "likes": 236,
   "comments": 6,
   "shares": 14,
   "saves": 6,
@@ -49,16 +49,16 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 34100,
+    "views": 34400,
     "likes": 29,
     "comments": 0,
     "shares": 2,
     "saves": 3,
-    "updated": "2026-11-04T13:28+07:00",
+    "updated": "2026-11-04T13:56+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793944800&x-signature=fVKIKrPD7DDkXuhF%2BXCDIBiBYh8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1793944800&x-signature=J%2FWZOIxsZ%2FIAeJ3DSKlP8i%2FWQEk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@plwar_/video/7702757432715496722?_r=1&_t=ZS-9B0i6xvbLsO",
    "duration": 34,
    "uploaded": "2026-10-31T16:13+07:00"
@@ -152,12 +152,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 37200,
-    "likes": 137,
+    "views": 37600,
+    "likes": 138,
     "comments": 6,
     "shares": 4,
     "saves": 3,
-    "updated": "2026-11-04T13:28+07:00",
+    "updated": "2026-11-04T13:56+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
@@ -255,12 +255,12 @@
    "budget": 8000,
    "shipped": true,
    "stats": {
-    "views": 573,
-    "likes": 68,
+    "views": 574,
+    "likes": 69,
     "comments": 0,
     "shares": 8,
     "saves": 0,
-    "updated": "2026-11-04T13:28+07:00",
+    "updated": "2026-11-04T13:56+07:00",
     "method": "yt-dlp"
    },
    "author": "a.aunaunnn",
