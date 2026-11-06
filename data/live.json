@@ -1,15 +1,15 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-06T07:06+07:00",
+ "updated": "2026-11-06T07:33+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {},
  "totals": {
-  "views": 236100,
-  "likes": 694,
+  "views": 237800,
+  "likes": 697,
   "comments": 30,
   "shares": 37,
-  "saves": 28,
+  "saves": 29,
   "kols": 22,
   "posted": 6
  },
@@ -31,12 +31,12 @@
    "budget": 8000,
    "shipped": true,
    "stats": {
-    "views": 28500,
-    "likes": 96,
+    "views": 28900,
+    "likes": 97,
     "comments": 11,
     "shares": 17,
     "saves": 10,
-    "updated": "2026-11-06T07:06+07:00",
+    "updated": "2026-11-06T07:33+07:00",
     "method": "yt-dlp"
    },
    "author": "greygreenish",
@@ -62,12 +62,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 56300,
+    "views": 56600,
     "likes": 44,
     "comments": 0,
     "shares": 2,
     "saves": 4,
-    "updated": "2026-11-06T07:06+07:00",
+    "updated": "2026-11-06T07:33+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
@@ -170,7 +170,7 @@
     "comments": 9,
     "shares": 4,
     "saves": 5,
-    "updated": "2026-11-06T07:06+07:00",
+    "updated": "2026-11-06T07:33+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
@@ -214,12 +214,12 @@
    "budget": 4200,
    "shipped": true,
    "stats": {
-    "views": 26700,
-    "likes": 167,
+    "views": 27100,
+    "likes": 168,
     "comments": 10,
     "shares": 5,
     "saves": 5,
-    "updated": "2026-11-06T07:06+07:00",
+    "updated": "2026-11-06T07:33+07:00",
     "method": "yt-dlp"
    },
    "author": "fongfirst_",
@@ -245,12 +245,12 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 23500,
+    "views": 23800,
     "likes": 33,
     "comments": 0,
     "shares": 0,
     "saves": 1,
-    "updated": "2026-11-06T07:06+07:00",
+    "updated": "2026-11-06T07:33+07:00",
     "method": "yt-dlp"
    },
    "author": "parii_c91",
@@ -294,16 +294,16 @@
    "budget": 8000,
    "shipped": true,
    "stats": {
-    "views": 43700,
-    "likes": 158,
+    "views": 44000,
+    "likes": 159,
     "comments": 0,
     "shares": 9,
-    "saves": 3,
-    "updated": "2026-11-06T07:06+07:00",
+    "saves": 4,
+    "updated": "2026-11-06T07:33+07:00",
     "method": "yt-dlp"
    },
    "author": "a.aunaunnn",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o8fI9dKegshRwloFoQFGeGoGwfALFUOAjbMrgg~tplv-tiktokx-origin.image?dr=9636&x-expires=1794096000&x-signature=oxpDCaBIX9RYPLKoDWwH8EMdjDU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o8fI9dKegshRwloFoQFGeGoGwfALFUOAjbMrgg~tplv-tiktokx-origin.image?dr=9636&x-expires=1794096000&x-signature=MlPjUIzAoa9FMJYWjZ1n4RDMozs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@a.aunaunnn/video/7703472961180667144?_r=1&_t=ZS-9B67MSDsIPV",
    "duration": 33,
    "uploaded": "2026-11-02T14:29+07:00"
