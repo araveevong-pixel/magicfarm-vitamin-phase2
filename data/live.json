@@ -1,14 +1,14 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-25T13:17+07:00",
+ "updated": "2026-11-25T13:45+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {
   "remaining": 194300
  },
  "totals": {
-  "views": 3094877,
-  "likes": 6233,
+  "views": 3098688,
+  "likes": 6236,
   "comments": 145,
   "shares": 212,
   "saves": 253,
@@ -38,7 +38,7 @@
     "comments": 13,
     "shares": 25,
     "saves": 21,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "greygreenish",
@@ -69,11 +69,11 @@
     "comments": 0,
     "shares": 5,
     "saves": 10,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "plwar_",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=BwBTRyUrd7uXYEcg8jt%2BezHabl4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oohcBf9ICijqISsFQB1wiAVlIrItAbqEHAZl3a~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=XfFEcj9PdN033MIdYaxZyyBUXzI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@plwar_/video/7702757432715496722?_r=1&_t=ZS-9B0i6xvbLsO",
    "duration": 34,
    "uploaded": "2026-10-31T16:13+07:00"
@@ -95,16 +95,16 @@
    "budget": 2500,
    "shipped": true,
    "stats": {
-    "views": 145200,
+    "views": 145500,
     "likes": 230,
     "comments": 4,
     "shares": 23,
     "saves": 11,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "faiionicha_",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0Dq6ggQESDA9cfFRSB3PqMktjMBRED5QN44f3~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=fsbBualtS4BhJZpUi9nAGdlea4Q%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0Dq6ggQESDA9cfFRSB3PqMktjMBRED5QN44f3~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=tX%2F1xTub60tRy0fXAfvWMlFESno%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@faiionicha_/video/7707094585855577351?_r=1&_t=ZS-9BKx4AlPfSp",
    "duration": 34,
    "uploaded": "2026-11-12T08:43+07:00"
@@ -126,16 +126,16 @@
    "budget": 12000,
    "shipped": true,
    "stats": {
-    "views": 118400,
+    "views": 118600,
     "likes": 188,
     "comments": 1,
     "shares": 20,
     "saves": 6,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "phriknit",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oknRBigbIyqCFdEjIB80iUiHofItWBfi7uAF0P~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=J9RJLS%2FJSuXo4A9KTSe3adKE0B8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oknRBigbIyqCFdEjIB80iUiHofItWBfi7uAF0P~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=mMFduupolCXZxRehBI%2F4aWn8vGs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@phriknit/video/7709135683272576257?_r=1&_t=ZS-9BWUstKQVxh",
    "duration": 75,
    "uploaded": "2026-11-17T20:44+07:00"
@@ -162,7 +162,7 @@
     "comments": 7,
     "shares": 4,
     "saves": 9,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "bamchompoonut",
@@ -193,7 +193,7 @@
     "comments": 2,
     "shares": 2,
     "saves": 6,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "barrygift289",
@@ -224,7 +224,7 @@
     "comments": 9,
     "shares": 4,
     "saves": 3,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "eyekhunnn",
@@ -250,16 +250,16 @@
    "budget": 8000,
    "shipped": true,
    "stats": {
-    "views": 149000,
+    "views": 149300,
     "likes": 364,
     "comments": 34,
     "shares": 35,
     "saves": 42,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "kiddee_mesuk",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAABsFImF7scDISRRffBCPEngUEmBHoIEqJmI4~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=IXw%2Fq4afcfFxFnFljm2w8z%2FhrMc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAABsFImF7scDISRRffBCPEngUEmBHoIEqJmI4~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=Tuk6xyjLsxA1Wkzs08ejUvrmbwQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@kiddee_mesuk/video/7704570102204747014?_r=1&_t=ZS-9B91JzT6vKP",
    "duration": 49,
    "uploaded": "2026-11-05T13:27+07:00"
@@ -286,7 +286,7 @@
     "comments": 10,
     "shares": 5,
     "saves": 9,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "fongfirst_",
@@ -317,11 +317,11 @@
     "comments": 2,
     "shares": 2,
     "saves": 6,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "parii_c91",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okMfcQKFFg8q5WNRLwe8fEaiM820FGAaVrgfAG~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=gvOUNjg2jxbwWGPMuAOt62xs5yE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okMfcQKFFg8q5WNRLwe8fEaiM820FGAaVrgfAG~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=9WQip4rm5EqauUMhC3R8SFvRwDA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@parii_c91/video/7704243938688896276?_r=1&_t=ZS-9B7WryeV7uX",
    "duration": 48,
    "uploaded": "2026-11-04T16:21+07:00"
@@ -343,16 +343,16 @@
    "budget": 7500,
    "shipped": false,
    "stats": {
-    "views": 68900,
+    "views": 69300,
     "likes": 938,
     "comments": 25,
     "shares": 7,
     "saves": 30,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "awllkkao",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUeAQ4E0mDALg4RW5sF2DjVD3IBAuC1fQdf89E~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=THLtEDG3r0lG4xPQXoXMdxG5e94%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUeAQ4E0mDALg4RW5sF2DjVD3IBAuC1fQdf89E~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=DykG4tD9xOajfW2QSZJTqTiYWz4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@awllkkao/video/7709811051289644308?_r=1&_t=ZS-9BX1Jfzf95I",
    "duration": 36,
    "uploaded": "2026-11-19T16:24+07:00"
@@ -379,7 +379,7 @@
     "comments": 1,
     "shares": 17,
     "saves": 14,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "a.aunaunnn",
@@ -405,16 +405,16 @@
    "budget": 7500,
    "shipped": true,
    "stats": {
-    "views": 142700,
+    "views": 143000,
     "likes": 61,
     "comments": 2,
     "shares": 1,
     "saves": 4,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "pee02082545",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okq8DfLyI6cPB2jEI7KxABA4BRFpkcfVFgqDpE~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=MoIHfwjClNsARkenkuPkqRHrpls%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okq8DfLyI6cPB2jEI7KxABA4BRFpkcfVFgqDpE~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=XGS%2BwZ9j4pyhUKJxdJP8Vd38IZY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@pee02082545/video/7706163149254282516?_r=1&_t=ZS-9BGJqdkUROw",
    "duration": 48,
    "uploaded": "2026-11-09T20:28+07:00"
@@ -436,16 +436,16 @@
    "budget": 8000,
    "shipped": false,
    "stats": {
-    "views": 147100,
+    "views": 147300,
     "likes": 217,
     "comments": 4,
     "shares": 1,
     "saves": 0,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "teachergracebaby",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0wCBfBKBBPqirlEC1iAoYIZeBUIVmpg3cREDA~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=SdGowqFFWan5kEwveKD4A9G0jn0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0wCBfBKBBPqirlEC1iAoYIZeBUIVmpg3cREDA~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=xPVkol1FPyQHRFl%2FPPIHcHIarZk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@teachergracebaby/video/7707068013241076999?_r=1&_t=ZS-9BKZb1C7eHi",
    "duration": 25,
    "uploaded": "2026-11-12T07:00+07:00"
@@ -472,11 +472,11 @@
     "comments": 8,
     "shares": 7,
     "saves": 13,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "nannyz_z",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMZAEU1IroGBkAPCwDukYfiWiCAILBd9ZozLZI~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=3%2ByTBqZHKSI3kMKzOCnJeTNFopM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMZAEU1IroGBkAPCwDukYfiWiCAILBd9ZozLZI~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=41%2BVAldn%2FK5f5nC6vQ%2FsqgzZVMs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@nannyz_z/video/7704262818110967058?_r=1&_t=ZS-9BARTGOVE2O",
    "duration": 33,
    "uploaded": "2026-11-04T17:34+07:00"
@@ -498,12 +498,12 @@
    "budget": 8000,
    "shipped": false,
    "stats": {
-    "views": 164400,
-    "likes": 87,
+    "views": 164600,
+    "likes": 88,
     "comments": 2,
     "shares": 2,
     "saves": 18,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "kandomaru.channel",
@@ -534,7 +534,7 @@
     "comments": 0,
     "shares": 1,
     "saves": 0,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "supper_jeng",
@@ -560,16 +560,16 @@
    "budget": 5000,
    "shipped": false,
    "stats": {
-    "views": 7974,
-    "likes": 571,
+    "views": 7985,
+    "likes": 572,
     "comments": 6,
     "shares": 11,
     "saves": 9,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "jawkib",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooe8QS6IjQGAtoaf7HQDLqDVChoFEDEsCAvIwf~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=x4LcWCeM6W2hp9i3Xg%2BMc0JRRSI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooe8QS6IjQGAtoaf7HQDLqDVChoFEDEsCAvIwf~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=oQ08mPdbEEEXAVwRRUH5F4X5xaY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@jawkib/video/7709813803969449223?_r=1&_t=ZS-9BX8NshHjsN",
    "duration": 57,
    "uploaded": "2026-11-19T16:35+07:00"
@@ -591,16 +591,16 @@
    "budget": 10000,
    "shipped": false,
    "stats": {
-    "views": 132800,
+    "views": 133000,
     "likes": 109,
     "comments": 0,
     "shares": 0,
     "saves": 10,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "jimmynatapat",
-   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYzBOJqQxvhDmBBogBUvafEPFEARfD8wu8YtnQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=2mQIQeJcWIKINiubX6hD%2Fe8PDNc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYzBOJqQxvhDmBBogBUvafEPFEARfD8wu8YtnQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=XFWDIMT49%2BwDmo%2B1DUZNxXg5OCE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@jimmynatapat/video/7706119244794170631?_r=1&_t=ZS-9BG74M79ZyA",
    "duration": 55,
    "uploaded": "2026-11-09T17:38+07:00"
@@ -640,12 +640,12 @@
    "budget": 6000,
    "shipped": false,
    "stats": {
-    "views": 126600,
+    "views": 126900,
     "likes": 305,
     "comments": 2,
     "shares": 34,
     "saves": 10,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "chacha12050",
@@ -694,7 +694,7 @@
     "comments": 0,
     "shares": 1,
     "saves": 3,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "artrobinhood",
@@ -738,16 +738,16 @@
    "budget": 8000,
    "shipped": false,
    "stats": {
-    "views": 41400,
+    "views": 41700,
     "likes": 64,
     "comments": 0,
     "shares": 0,
     "saves": 2,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "p_ploy45",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEQDIUED5GfB2eOBIrSBEVtIYmFaPRAAK2BMhg~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=kDsrF5N%2BIgpn8nL6wI3LBCz9DJ4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEQDIUED5GfB2eOBIrSBEVtIYmFaPRAAK2BMhg~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=mkNK%2F8PfwCjo%2FAsgWnFlAbtzj2s%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@p_ploy45/video/7710480846674824468?_r=1&_t=ZS-9Ba5LIqVLjI",
    "duration": 41,
    "uploaded": "2026-11-21T11:43+07:00"
@@ -769,16 +769,16 @@
    "budget": 9000,
    "shipped": false,
    "stats": {
-    "views": 118900,
+    "views": 119200,
     "likes": 173,
     "comments": 2,
     "shares": 2,
     "saves": 9,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "mejiii23",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ok08jOAe8AQT1kf1EMGrfMFeNQGwXRSs7GtQRK~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=gyGCOvUi%2FVLBwq18lniKSQ4TOXc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ok08jOAe8AQT1kf1EMGrfMFeNQGwXRSs7GtQRK~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=4GfAxM8AW38BesWp0HlwGYY7gVE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@mejiii23/video/7709094616389127442?_r=1&_t=ZS-9BTjjqOBumV",
    "duration": 47,
    "uploaded": "2026-11-17T18:04+07:00"
@@ -836,12 +836,12 @@
    "budget": 6000,
    "shipped": false,
    "stats": {
-    "views": 111800,
+    "views": 112000,
     "likes": 44,
     "comments": 5,
     "shares": 1,
     "saves": 2,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "jay.minine",
@@ -867,16 +867,16 @@
    "budget": 10000,
    "shipped": false,
    "stats": {
-    "views": 35000,
+    "views": 35300,
     "likes": 294,
     "comments": 6,
     "shares": 1,
     "saves": 3,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "fai3311",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oM0EefCA6gNRD5gIBLvEAOBUIBAFIkQnrGMOiI~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=J%2FzbFHLKD6HLH2AkHqTBk4xCShM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
+   "thumbnail": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oM0EefCA6gNRD5gIBLvEAOBUIBAFIkQnrGMOiI~tplv-tiktokx-origin.image?dr=9636&x-expires=1795759200&x-signature=S7loJ9QhkfU62hKWouX8tsoEIEw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@fai3311/video/7710201290055241012?_r=1&_t=ZS-9BYo2tKG1FF",
    "duration": 40,
    "uploaded": "2026-11-20T17:38+07:00"
@@ -898,12 +898,12 @@
    "budget": 6000,
    "shipped": false,
    "stats": {
-    "views": 34300,
-    "likes": 89,
+    "views": 34600,
+    "likes": 90,
     "comments": 0,
     "shares": 1,
     "saves": 3,
-    "updated": "2026-11-25T13:17+07:00",
+    "updated": "2026-11-25T13:45+07:00",
     "method": "yt-dlp"
    },
    "author": "nongphatcha46",
