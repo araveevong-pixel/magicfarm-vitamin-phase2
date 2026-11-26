@@ -1,6 +1,6 @@
 {
  "campaign": "Magic Farm Vitamin 2026 — Phase 2",
- "updated": "2026-11-26T10:23+07:00",
+ "updated": "2026-11-26T10:51+07:00",
  "source": "https://docs.google.com/spreadsheets/d/1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI",
  "kpi_from_sheet": {},
  "sheet_budget": {
@@ -38,11 +38,11 @@
     "comments": 13,
     "shares": 26,
     "saves": 21,
-    "updated": "2026-11-26T10:23+07:00",
+    "updated": "2026-11-26T10:51+07:00",
     "method": "yt-dlp"
    },
    "author": "greygreenish",
-   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEaIJNoEkVI8A3BALAibX8itshBYMk9cYPZBu~tplv-tiktokx-origin.image?dr=9636&x-expires=1795834800&x-signature=ZPdzxyCDdIpO4E264QHVuCxHCcg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+   "thumbnail": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEaIJNoEkVI8A3BALAibX8itshBYMk9cYPZBu~tplv-tiktokx-origin.image?dr=9636&x-expires=1795834800&x-signature=ZPdzxyCDdIpO4E264QHVuCxHCcg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5",
    "video_url": "https://www.tiktok.com/@greygreenish/video/7703528390891932949",
    "duration": 37,
    "uploaded": "2026-11-02T18:04+07:00"
@@ -378,7 +378,7 @@
    "category": "โรงงาน",
    "stage": "final",
    "note": "",
-   "planned_post": "20 Nov",
+   "planned_post": "",
    "post_date_sheet": "แก้ไขตามฟีดแบคเรียบร้อยค่ะ",
    "post_url": "",
    "tiktok_handle": "fb.sasiwimol_jamaree",
@@ -414,7 +414,7 @@
    "category": "โรงงาน",
    "stage": "final",
    "note": "",
-   "planned_post": "18-19 Nov",
+   "planned_post": "",
    "post_date_sheet": "แก้ไขตามฟีดแบคเรียบร้อยค่ะ",
    "post_url": "",
    "tiktok_handle": "tanatporn_ploy",
@@ -522,7 +522,7 @@
    "category": "รับราชการครู",
    "stage": "final",
    "note": "",
-   "planned_post": "20 Nov",
+   "planned_post": "",
    "post_date_sheet": "แก้ไขตามฟีดแบคแล้วค่ะ ตอนโพสต์ขอให้ลดเสียงดนตรีลงครึ่งนึง",
    "post_url": "",
    "tiktok_handle": "scott_chiratheep",
