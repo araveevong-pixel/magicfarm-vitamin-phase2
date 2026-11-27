@@ -33,6 +33,7 @@ from datetime import datetime, timezone, timedelta
 
 SHEET_ID = "1X4mdguJ7tF266c1SJOCS_wQPcXbGvnhC8vRVrNuc7MI"
 CLIENT_CHOOSES_GID = "941862681"
+WORKING_GID = "1410897807"
 WORKING_SHEET = "Working Timeline"
 KPI_SHEET = "KPI"
 
@@ -354,13 +355,30 @@ def main():
     prev_by_key = {k["key"]: k for k in prev.get("kols", [])}
 
     # 1) Sheet
-    try:
-        wt_text = open(args.wt, encoding="utf-8").read() if args.wt else gviz_csv(
-            WORKING_SHEET, "select A,B,C,D,E,H,K,O,P where C is not null")
-        working = parse_working(wt_text)
-    except Exception as e:
-        log(f"!! Working Timeline fetch failed: {e}")
-        working = []
+    # Read the WHOLE tab and locate columns by header name (never by column letter),
+    # so inserting/moving columns in the sheet can't break the dashboard.
+    working = []
+    sources = [("file", lambda: open(args.wt, encoding="utf-8").read())] if args.wt else [
+        ("export", lambda: export_csv(WORKING_GID)),
+        ("gviz", lambda: gviz_csv(WORKING_SHEET)),
+    ]
+    for name, fetch in sources:
+        try:
+            working = parse_working(fetch())
+            if working and any(w["post_url"] for w in working):
+                break
+            log(f"   Working Timeline via {name}: {len(working)} rows, no links found — trying next source")
+        except Exception as e:
+            log(f"!! Working Timeline via {name} failed: {e}")
+
+    # Guard: if most previously-posted KOLs suddenly have no link, the sheet layout probably
+    # changed — keep their previous links instead of wiping their views.
+    prev_posted = {k["key"]: k["post_url"] for k in prev.get("kols", []) if k.get("post_url")}
+    lost = [w for w in working if not w["post_url"] and w["key"] in prev_posted]
+    if prev_posted and len(lost) >= max(3, len(prev_posted) // 2):
+        log(f"!! {len(lost)}/{len(prev_posted)} posted KOLs lost their link in the sheet — keeping previous links")
+        for w in lost:
+            w["post_url"], w["stage"], w["note"] = prev_posted[w["key"]], "posted", ""
     if not working:
         if prev.get("kols"):
             log("!! No roster from sheet — keeping previous data untouched.")
@@ -467,7 +485,18 @@ def main():
         hist[-1]["t"] = point["t"]          # nothing changed — just bump the timestamp
     elif not args.no_scrape or not hist:
         hist.append(point)
-    write_json(HISTORY_PATH, hist[-1500:])
+
+    # Drop glitch points: posted clips never really halve, so a sudden drop to under half of
+    # the best count so far means the sheet was misread at that moment (e.g. 25-27 Nov 2026).
+    clean, best = [], 0
+    for p_ in hist:
+        if best >= 4 and p_.get("posted", 0) < best / 2:
+            continue
+        best = max(best, p_.get("posted", 0))
+        clean.append(p_)
+    if len(clean) != len(hist):
+        log(f"   history: dropped {len(hist) - len(clean)} glitch points")
+    write_json(HISTORY_PATH, clean[-1500:])
 
     log(f"Done: {len(posted)}/{len(kols)} posted · {tot['views']:,} views")
 
